@@ -2,7 +2,8 @@
 <?php include_once("public/head.php");?>
 <!-- Including Head Ends -->
 <body class="dark-layout">
-	<h2>Prakash Koppal and Sagar...</h2>
+	
+	
 
 	<div class="page-wrapper">
 		<!-- Preloader -->

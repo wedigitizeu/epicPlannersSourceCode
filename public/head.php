@@ -1,5 +1,6 @@
 <?php include_once("properties/socialMedia.php");?>
 <?php include_once("properties/company.php");?>
+<?php include_once("properties/labels.php");?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +8,7 @@
 <!-- stella-orre/index-2.html  30 Nov 2019 03:46:47 GMT -->
 <head>
 <meta charset="utf-8">
-<title><?php title();?></title>
+
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">

@@ -14,7 +14,9 @@
 									<div class="logo">
                                     	<a href="index-2.html"><img src="images/footer-logo.png" alt="" /></a>
                                     </div>
-                                    <div class="text">Stella Orr'e is a WordPress theme to build Interior websites. It has good features and you will love.</div>
+                                    <div class="text">
+                                    	To transform your dreams into an event to be remembered for a lifetime.
+                                    </div>
                                     <ul class="social-icons">
                                         <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
                                         <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
