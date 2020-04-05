@@ -38,13 +38,17 @@ function  address()
 	echo 'Address';
 }
 
+function homePL()
+{
+	echo "Home";
+}
 function aboutusPL()
 {
-	echo "About Us..";
+	echo "About Us";
 }
 
 function conatctPL()
 {
-	echo "Cobtact Us..";
+	echo "Contact Us";
 }
 ?>

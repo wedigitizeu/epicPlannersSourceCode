@@ -51,7 +51,7 @@
                             <!--Footer Column-->
                             <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                                 <div class="footer-widget contact-widget">
-									<h2>Contact Info</h2>
+									<h2><?php conatctPL(); ?></h2>
 									<div class="widget-content">
 										<a href="tel:1800-574-9687" class="contact-number">(1800) 574 9687</a>
 										<ul>
