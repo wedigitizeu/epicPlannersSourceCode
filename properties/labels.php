@@ -51,4 +51,9 @@ function conatctPL()
 {
 	echo "Contact Us";
 }
+
+function galleryPL()
+{
+	echo "Gallery";
+}
 ?>

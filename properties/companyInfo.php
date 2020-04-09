@@ -30,4 +30,14 @@ function companyEmail()
 	echo "email";
 }
 
+function openingHours() 
+{
+	echo "9:00 AM to 9:00PM<br>Monday – Sunday";
+}
+
+function poweredByPL()
+{
+	echo "Powered By WedigitizeU";
+}
+
 ?>

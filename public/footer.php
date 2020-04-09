@@ -33,10 +33,10 @@
                                 	<h2>Quick links</h2>
 									<div class="widget-content">
 										<ul class="list">
-                                        	<li><a href="#">About Gaille</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Terms & Conditionis</a></li>
-                                            <li><a href="#">Faq</a></li>
+                                        	<li><a href="<?php homePLLink();?>"><?php homePL();?></a></li>
+                                            <li><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a></li>
+                                            <li><a href="<?php galleryPLLink();?>"><?php galleryPL();?></a></li>
+                                            
                                         </ul>
                                     </div>
 								</div>
@@ -96,10 +96,10 @@
 			<!--Footer Bottom-->
             <div class="footer-bottom clearfix">
                 <div class="pull-left">
-                    <div class="copyright"><a href="templateshub.net">Templates Hub</a></div>
+                    <div class="copyright"><a href="<?php poweredByPLLink()?>"><?php poweredByPL()?></a></div>
                 </div>
                 <div class="pull-right">
-                    <a href="templateshub.net">Templates Hub</a>
+                    
                 </div>
             </div>
 			

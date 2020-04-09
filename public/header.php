@@ -27,11 +27,11 @@
 
 									</li>
 									<li class="dropdown"><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a>
-										<ul>
+										<!-- <ul>
 											<li><a href="about.html">Our Introduction</a></li>
 											<li><a href="team.html">Our Team</a></li>
 											<li><a href="testimonials.html">Testimonials</a></li>
-										</ul>
+										</ul> -->
 									</li>
 									<li class="dropdown"><a href="services-dark.html">Gallery</a>
 										<ul>
@@ -52,14 +52,14 @@
 											
 										</ul>
 									</li>
-									<li class="dropdown"><a href="projects-classic.html">Projects</a>
+									<!-- <li class="dropdown"><a href="projects-classic.html">Projects</a>
 										<ul>
 											<li><a href="projects-classic.html">Projects Classic</a></li>
 											<li><a href="projects-masonry.html">Project Masonry</a></li>
 											<li><a href="projects-fullwidth.html">Project Full Screen</a></li>
 										</ul>
-									</li>
-									<li class="dropdown"><a href="blog.html">Blog</a>
+									</li> -->
+									<!-- <li class="dropdown"><a href="blog.html">Blog</a>
 										<ul>
 											<li><a href="blog.html">Blog</a></li>
 											<li><a href="blog-2.html">blog 2 column</a></li>
@@ -73,8 +73,8 @@
 											<li><a href="cart-page.html">Cart Page</a></li>
 											<li><a href="checkout.html">Checkout</a></li>
 										</ul>
-									</li>
-									<li><a href="contact.php">Contact</a></li>
+									</li> -->
+									<li><a href="<?php conatctPLLink();?>"><?php conatctPL();?></a></li>
 								</ul>
 							</div>
 						</nav>
@@ -82,7 +82,8 @@
 
 						<!-- Outer Box -->
 						<div class="outer-box clearfix">
-							<div class="search-box-btn"><span class="icon flaticon-magnifying-glass-1"></span></div>
+							<!-- <div class="search-box-btn"><span class="icon flaticon-magnifying-glass-1"></span> -->
+						</div>
 						</div>
 					</div>
 				</div>
