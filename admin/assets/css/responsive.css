@@ -1,0 +1,147 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  .team-desc a {
+      height: 29px;
+      width: 29px;
+    }
+    .team-desc span {
+      margin: 0 0 45px;
+    }
+    .blog-text a {
+      font-size: 13px;
+    }
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .project-menu ul li {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+    .counter-item{
+        margin-bottom: 30px;
+    }
+    .pricing-item {
+      margin-bottom: 30px;
+    }
+    .single-team-item {
+      margin-bottom: 30px;
+    }    
+    .logo {
+      text-align: center;
+    }   
+    
+    .footer-widgets {
+        padding-bottom: 0;
+        padding-top: 50px;
+    }
+    
+    .footer-area {
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
+    
+    .about-box {
+        margin-bottom: 70px;
+    }
+    .discover-about-area {
+        padding-bottom: 10px;
+    }    
+    .contact-form {
+        margin-bottom: 50px;
+    }
+    .contact-area {
+        padding-bottom: 50px;
+    }
+    
+    .single-service {
+        margin: 0 0 15px;
+    }
+
+
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+    .responsive-menu{
+        display: block;
+    }
+    .responsive-menu .slicknav_menu {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    }
+    .responsive-menu {
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+    .mainmenu{
+        display: none;
+    }
+    .logo {
+        margin: 0;
+        padding: 12px 0;
+    }  
+    
+    .header-area {
+        position: relative;
+        z-index: 9;
+    }
+    .slicknav_nav {
+        background: #000 none repeat scroll 0 0;
+        width: 230px;
+    }
+    .slicknav_nav .slicknav_row:hover {
+      background: #f41c54 none repeat scroll 0 0;
+      border-radius: 0;
+    }
+    .slicknav_nav a:hover {
+      background: #F41C54;
+      border-radius: 0px;
+      color: #fff;
+    }
+    .slicknav_nav .slicknav_row, .slicknav_nav a {
+      margin: 0;
+    }
+    .discover-section-content {
+      padding: 0;
+    }
+    .project-menu ul li {
+      display: block;
+      margin: 0 5px 10px;
+    }
+    .counter-item, .pricing-item, .single-team-item {
+      margin-bottom: 30px;
+    }
+    .discover-slide-item h1 {
+      font-size: 25px;
+    }
+    .footer-area .pd-left-70 {
+       padding-left: 15px;
+    }    
+    .contact-area {
+        padding-bottom: 50px;
+    }
+    .widgets button {
+      padding: 10px 15px;
+    }
+    .single-service {
+        margin: 0 0 15px;
+    }
+    
+    .about-box {
+        margin: 0 0 70px;
+    }
+    .discover-about-area {
+        padding-bottom: 25px;
+    }
+
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    .container,
+    .container-fluid {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
