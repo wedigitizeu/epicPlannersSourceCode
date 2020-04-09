@@ -2,7 +2,7 @@
 <?php include_once("public/head.php");?>
 <!-- Including Head Ends -->
 <body class="dark-layout">
-	<h1>Welcome to Git Hub</h1>
+	
 
 	<div class="page-wrapper">
 		<!-- Preloader -->
