@@ -1,4 +1,4 @@
-<?php include_once("admin/categories/serviceCategory.php")?>		
+<!-- <?php include_once("admin/categories/serviceCategory.php")?> -->		
 		<header class="main-header header-style-two">
 
 			<!-- Header Upper -->

@@ -2,11 +2,8 @@
 <?php include_once("public/head.php");?>
 <!-- Including Head Ends -->
 <body class="dark-layout">
-
-	Sagar
-    Sagar
-    Sagar
-    Sagar
+	
+	
 
 	<div class="page-wrapper">
 		<!-- Preloader -->
