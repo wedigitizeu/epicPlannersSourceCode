@@ -6,8 +6,8 @@
 
 	<div class="page-wrapper">
 		<!-- Preloader -->
-		<div class="preloader"></div>
-<h1>about us changed by Prakash and sagar</h1>
+		<!-- <div class="preloader"></div> -->
+
 		<!-- Main Header / Header Style Two -->
 		<?php include_once("public/header.php");?>   
 		<!-- End Main Header -->
@@ -38,7 +38,7 @@
                                                    Create your memory with us.</div>
 							<div class="text">
 								<p>
-									Life is all about celebrating every little happiness and turning moments into memories. We "<?php title();?>" are here to take every responsibility of your celebration on our shoulders and let you enjoy every moment with your loved ones. You dream of your event and we'll make it happen.</p>
+									Life is all about celebrating every little happiness and turning moments into memories. We "jj" are here to take every responsibility of your celebration on our shoulders and let you enjoy every moment with your loved ones. You dream of your event and we'll make it happen.</p>
 								<p></p>
 							</div>
 						</div>

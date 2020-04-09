@@ -23,10 +23,10 @@
 
 							<div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li class="current dropdown"><a href="index.php">Home</a>
+									<li class="current dropdown"><a href="<?php homePLLink()?>"><?php homePL();?></a>
 
 									</li>
-									<li class="dropdown"><a href="about.html">About us</a>
+									<li class="dropdown"><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a>
 										<ul>
 											<li><a href="about.html">Our Introduction</a></li>
 											<li><a href="team.html">Our Team</a></li>

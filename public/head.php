@@ -1,6 +1,7 @@
 <?php include_once("properties/socialMedia.php");?>
-<?php include_once("properties/company.php");?>
+<?php include_once("properties/companyInfo.php");?>
 <?php include_once("properties/labels.php");?>
+<?php include_once("properties/labelsLink.php");?>
 
 <!DOCTYPE html>
 <html lang="en">

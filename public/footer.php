@@ -1,3 +1,4 @@
+
 <footer class="main-footer">
 		<div class="auto-container">
         	<!--Widgets Section-->
@@ -53,10 +54,17 @@
                                 <div class="footer-widget contact-widget">
 									<h2><?php conatctPL(); ?></h2>
 									<div class="widget-content">
-										<a href="tel:1800-574-9687" class="contact-number">(1800) 574 9687</a>
+										<a href="tel:<?php companyMobile2();?>" class="contact-number">
+											<?php companyMobile1();?>
+										</a>
+
+										<a href="tel:<?php companyMobile2();?>" class="contact-number">
+											<?php companyMobile2();?>
+										</a>
+										
 										<ul>
-											<li>256, Stella Orr'e, New York 24</li>
-											<li>Email :<a href="mailto:info@stellaorre.com"> info@stellaorre.com</a></li>
+											<li><?php companyAddress();?></li>
+											<li>Email :<a href="<?php companyEmail();?>"> <?php companyEmail();?></a></li>
 										</ul>
 									</div>
 								</div>
