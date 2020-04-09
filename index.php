@@ -2,7 +2,7 @@
 <?php include_once("public/head.php");?>
 <!-- Including Head Ends -->
 <body class="dark-layout">
-	
+	<h1>Git Hub Using in  epic Planner Project</h1>
 
 	<div class="page-wrapper">
 		<!-- Preloader -->
