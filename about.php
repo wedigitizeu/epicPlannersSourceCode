@@ -7,7 +7,7 @@
 	<div class="page-wrapper">
 		<!-- Preloader -->
 		<div class="preloader"></div>
-<h1>about us changed by Prakash</h1>
+<h1>about us changed by Prakash and sagar</h1>
 		<!-- Main Header / Header Style Two -->
 		<?php include_once("public/header.php");?>   
 		<!-- End Main Header -->
