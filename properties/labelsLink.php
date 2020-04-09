@@ -20,6 +20,6 @@ function poweredByPLLink()
 
 function galleryPLLink()
 {
-	echo "gallery.php";
+	echo "services-dark.php";
 }
 ?>

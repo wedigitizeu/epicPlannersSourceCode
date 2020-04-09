@@ -111,9 +111,9 @@
 
 <?php include_once("public/js.php");?>
 <!--Google Map APi Key-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
 <script src="js/map-script.js"></script>
-<!--End Google Map APi-->
+ --><!--End Google Map APi-->
 </body>
 
 <!-- stella-orre/contact.html  30 Nov 2019 03:46:47 GMT -->

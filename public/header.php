@@ -33,7 +33,7 @@
 											<li><a href="testimonials.html">Testimonials</a></li>
 										</ul> -->
 									</li>
-									<li class="dropdown"><a href="services-dark.html">Gallery</a>
+									<li class="dropdown"><a href="<?php galleryPLLink();?>"><?php galleryPL();?></a>
 										<ul>
 										<?php
 											for($i=0;$i<count($serviceCategory);$i++)
