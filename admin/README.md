@@ -1,2 +1,3 @@
-# printingmane
+# EpicPlanner
+
 add
