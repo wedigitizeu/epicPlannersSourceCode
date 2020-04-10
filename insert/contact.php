@@ -16,7 +16,21 @@ $query="INSERT INTO `contact`(`date`, `time`, `name`, `email`, `mobile`, `lookin
 $exe=mysqli_query($conn,$query);
 if($exe)
 {
-	echo "Inserted";
+
+?>
+	<script>
+		$(document).ready(function()
+			{
+				
+  					
+  					$("#msg").fadeOut(12000);
+					
+			});
+	</script>
+
+	 <p id="msg" style='color:#dfb162;font-weight:bold;'><br>We appreciate you contacting us. One of our colleagues will get back in touch with you soon!<br>Have a great day!</p>
+
+<?php
 }
 else
 {
