@@ -13,7 +13,8 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-                                    	<a href="index-2.html"><img src="images/footer-logo.png" alt="" /></a>
+                                    	<a href="index-2.html"><img src="images/logo.jpg" alt="" /></a>
+                                    	<h3><?php companyTitle();?></h3>
                                     </div>
                                     <div class="text">
                                     	To transform your dreams into an event to be remembered for a lifetime.
@@ -35,7 +36,7 @@
 										<ul class="list">
                                         	<li><a href="<?php homePLLink();?>"><?php homePL();?></a></li>
                                             <li><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a></li>
-                                            <li><a href="<?php galleryPLLink();?>"><?php galleryPL();?></a></li>
+                                            <li><a href="<?php  conatctPLLink();?>"><?php conatctPL();?></a></li>
                                             
                                         </ul>
                                     </div>

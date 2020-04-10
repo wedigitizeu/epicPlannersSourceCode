@@ -29,7 +29,7 @@
 		<!-- End Interior Section -->
 		
 		<!-- Counter Section -->
-		<?php include_once("public/counter.php")?>
+		<?php include_once("public/counterSection.php")?>
 		<!-- End Counter Section -->
 		<?php include_once("public/featured.php")?>
 		<!-- Featured Section -->
