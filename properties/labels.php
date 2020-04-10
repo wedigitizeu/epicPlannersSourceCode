@@ -44,7 +44,7 @@ function homePL()
 }
 function aboutusPL()
 {
-	echo "About Us";
+	echo "About us";
 }
 
 function conatctPL()

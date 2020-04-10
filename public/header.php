@@ -8,7 +8,7 @@
 			<div class="logo-outer">
 
 
-				<div class="logo"><a href="<?php homePLLINK();?>"><img src="" alt="<?php companyTitle();?>" title=""></a></div>
+				<div class="logo"><a href="<?php homePLLINK();?>"><img src="images/logo.jpg" alt="<?php companyTitle();?>" title="" ></a></div>
 			</div>
 
 
@@ -25,7 +25,7 @@
 
 					<div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
 						<ul class="navigation clearfix">
-							<li class="current dropdown"><a href="<?php homePLLink()?>"><?php homePL();?></a>
+							<li class="dropdown"><a href="<?php homePLLink()?>"><?php homePL();?></a>
 
 							</li>
 							<li class="dropdown"><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a>
