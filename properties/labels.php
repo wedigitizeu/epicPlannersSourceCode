@@ -18,7 +18,7 @@ function email ()
 	echo 'Email';
 }
 
-function mobile()
+function mobilePL()
 {
 	echo 'Mobile';
 }

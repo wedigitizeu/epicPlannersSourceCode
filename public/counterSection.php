@@ -10,9 +10,9 @@
 						<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 							<div class="content">
 								<div class="count-outer count-box">
-									<span class="count-text" data-speed="2500" data-stop="8">0</span> Year
+									<span class="count-text" data-speed="200" data-stop="2">0</span> Year
 								</div>
-								<h4 class="counter-title">Material Warranty</h4>
+								<h4 class="counter-title">Creative Events</h4>
 							</div>
 						</div>
 					</div>
@@ -22,9 +22,9 @@
 						<div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 							<div class="content">
 								<div class="count-outer count-box alternate">
-									<span class="count-text" data-speed="3000" data-stop="2500">0</span>+
+									<span class="count-text" data-speed="3000" data-stop="100">0</span>+
 								</div>
-								<h4 class="counter-title">Homes Completed</h4>
+								<h4 class="counter-title">Coffee with Client</h4>
 							</div>
 						</div>
 					</div>
@@ -34,9 +34,9 @@
 						<div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
 							<div class="content">
 								<div class="count-outer count-box">
-									<span class="count-text" data-speed="3000" data-stop="200">0</span>+
+									<span class="count-text" data-speed="3000" data-stop="10">0</span>+
 								</div>
-								<h4 class="counter-title">Interior Designer</h4>
+								<h4 class="counter-title">Team Members</h4>
 							</div>
 						</div>
 					</div>
@@ -48,7 +48,7 @@
 								<div class="count-outer count-box">
 									<span class="count-text" data-speed="2500" data-stop="45">0</span> Days
 								</div>
-								<h4 class="counter-title">Project Delivery</h4>
+								<h4 class="counter-title">Successfull Events Delivery </h4>
 							</div>
 						</div>
 					</div>

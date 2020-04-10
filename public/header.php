@@ -6,10 +6,11 @@
 		<div class="outer-container clearfix">
 			<!--Info-->
 			<div class="logo-outer">
-				
 
-				<div class="logo"><a href="<?php homePLLINK();?>"><img src="images/logo.png" alt="" title=""></a></div>
+
+				<div class="logo"><a href="<?php homePLLINK();?>"><img src="" alt="<?php companyTitle();?>" title=""></a></div>
 			</div>
+
 
 			<!--Nav Box-->
 			<div class="nav-outer clearfix">
@@ -43,7 +44,7 @@
 												<li>
 													<a href="services-dark.html">
 														<?php echo $serviceCategory[$i]?>
-														
+
 													</a>
 												</li>
 												
@@ -53,6 +54,7 @@
 											
 										</ul>
 									</li>
+									
 									<!-- <li class="dropdown"><a href="projects-classic.html">Projects</a>
 										<ul>
 											<li><a href="projects-classic.html">Projects Classic</a></li>
@@ -76,6 +78,9 @@
 										</ul>
 									</li> -->
 									<li><a href="<?php conatctPLLink();?>"><?php conatctPL();?></a></li>
+									<li>
+										<a href="tel:<?php companyMobile1();?>"><?php companyMobile1();?></a>
+									</li>
 								</ul>
 							</div>
 						</nav>
