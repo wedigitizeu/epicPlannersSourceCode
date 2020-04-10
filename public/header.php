@@ -1,32 +1,33 @@
 <!-- <?php include_once("admin/categories/serviceCategory.php")?> -->		
-		<header class="main-header header-style-two">
+<header class="main-header header-style-two">
 
-			<!-- Header Upper -->
-			<div class="header-upper">
-				<div class="outer-container clearfix">
-					<!--Info-->
-					<div class="logo-outer">
+	<!-- Header Upper -->
+	<div class="header-upper">
+		<div class="outer-container clearfix">
+			<!--Info-->
+			<div class="logo-outer">
+				
 
-						<div class="logo"><a href="index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
+				<div class="logo"><a href="<?php homePLLINK();?>"><img src="images/logo.png" alt="" title=""></a></div>
+			</div>
+
+			<!--Nav Box-->
+			<div class="nav-outer clearfix">
+				<!--Mobile Navigation Toggler For Mobile--><div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+				<nav class="main-menu navbar-expand-md navbar-light">
+					<div class="navbar-header">
+						<!-- Togg le Button -->      
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon flaticon-menu-1"></span>
+						</button>
 					</div>
 
-					<!--Nav Box-->
-					<div class="nav-outer clearfix">
-						<!--Mobile Navigation Toggler For Mobile--><div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
-						<nav class="main-menu navbar-expand-md navbar-light">
-							<div class="navbar-header">
-								<!-- Togg le Button -->      
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="icon flaticon-menu-1"></span>
-								</button>
-							</div>
+					<div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+						<ul class="navigation clearfix">
+							<li class="current dropdown"><a href="<?php homePLLink()?>"><?php homePL();?></a>
 
-							<div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-								<ul class="navigation clearfix">
-									<li class="current dropdown"><a href="<?php homePLLink()?>"><?php homePL();?></a>
-
-									</li>
-									<li class="dropdown"><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a>
+							</li>
+							<li class="dropdown"><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a>
 										<!-- <ul>
 											<li><a href="about.html">Our Introduction</a></li>
 											<li><a href="team.html">Our Team</a></li>
@@ -35,20 +36,20 @@
 									</li>
 									<li class="dropdown"><a href="<?php galleryPLLink();?>"><?php galleryPL();?></a>
 										<ul>
-										<?php
+											<?php
 											for($i=0;$i<count($serviceCategory);$i++)
 											{
 												?>
 												<li>
 													<a href="services-dark.html">
 														<?php echo $serviceCategory[$i]?>
-															
+														
 													</a>
 												</li>
 												
 												<?php
 											}
-										?>
+											?>
 											
 										</ul>
 									</li>
@@ -83,7 +84,7 @@
 						<!-- Outer Box -->
 						<div class="outer-box clearfix">
 							<!-- <div class="search-box-btn"><span class="icon flaticon-magnifying-glass-1"></span> -->
-						</div>
+							</div>
 						</div>
 					</div>
 				</div>
