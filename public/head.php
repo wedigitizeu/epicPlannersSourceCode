@@ -1,6 +1,7 @@
 <?php include_once("properties/socialMedia.php");?>
-<?php include_once("properties/company.php");?>
+<?php include_once("properties/companyInfo.php");?>
 <?php include_once("properties/labels.php");?>
+<?php include_once("properties/labelsLink.php");?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +17,9 @@
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

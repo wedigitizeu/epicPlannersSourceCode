@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<form method="GET" action="success.html">
+	<input class="radiobtn" type="radio" name="rad" id="rad" value="YES" checked >
+	<input class="radiobtn" type="radio" name="rad" id="rad" value="NO">
+	
+	<input type="text" name="name" id="name">
+	<input type="submit" id="sub" >
+</form>
+
+<script type="text/javascript">
+	$(document).ready(function()
+		{
+			
+			$(".radiobtn").change(function()
+				{
+					alert($(this).val());
+				});
+			/*$("#sub").click(function()
+				{
+
+					if($("#yes").attr("checked","checked"))
+					{
+						alert("Yes Is Checked");
+						$("#name").attr("required",true);
+					}
+					else
+
+					{
+						alert("No Is Checked");
+
+					}
+					
+					
+				});*/
+			
+			
+		});
+</script>
+</body>
+</html>

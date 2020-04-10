@@ -1,3 +1,4 @@
+
 <footer class="main-footer">
 		<div class="auto-container">
         	<!--Widgets Section-->
@@ -32,10 +33,10 @@
                                 	<h2>Quick links</h2>
 									<div class="widget-content">
 										<ul class="list">
-                                        	<li><a href="#">About Gaille</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Terms & Conditionis</a></li>
-                                            <li><a href="#">Faq</a></li>
+                                        	<li><a href="<?php homePLLink();?>"><?php homePL();?></a></li>
+                                            <li><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a></li>
+                                            <li><a href="<?php galleryPLLink();?>"><?php galleryPL();?></a></li>
+                                            
                                         </ul>
                                     </div>
 								</div>
@@ -53,10 +54,17 @@
                                 <div class="footer-widget contact-widget">
 									<h2><?php conatctPL(); ?></h2>
 									<div class="widget-content">
-										<a href="tel:1800-574-9687" class="contact-number">(1800) 574 9687</a>
+										<a href="tel:<?php companyMobile2();?>" class="contact-number">
+											<?php companyMobile1();?>
+										</a>
+
+										<a href="tel:<?php companyMobile2();?>" class="contact-number">
+											<?php companyMobile2();?>
+										</a>
+										
 										<ul>
-											<li>256, Stella Orr'e, New York 24</li>
-											<li>Email :<a href="mailto:info@stellaorre.com"> info@stellaorre.com</a></li>
+											<li><?php companyAddress();?></li>
+											<li>Email :<a href="<?php companyEmail();?>"> <?php companyEmail();?></a></li>
 										</ul>
 									</div>
 								</div>
@@ -88,10 +96,10 @@
 			<!--Footer Bottom-->
             <div class="footer-bottom clearfix">
                 <div class="pull-left">
-                    <div class="copyright"><a href="templateshub.net">Templates Hub</a></div>
+                    <div class="copyright"><a href="<?php poweredByPLLink()?>"><?php poweredByPL()?></a></div>
                 </div>
                 <div class="pull-right">
-                    <a href="templateshub.net">Templates Hub</a>
+                    
                 </div>
             </div>
 			
