@@ -38,7 +38,7 @@
                                                    Create your memory with us.</div>
 							<div class="text">
 								<p>
-									Life is all about celebrating every little happiness and turning moments into memories. We "jj" are here to take every responsibility of your celebration on our shoulders and let you enjoy every moment with your loved ones. You dream of your event and we'll make it happen.</p>
+									Life is all about celebrating every little happiness and turning moments into memories. We are here to take every responsibility of your celebration on our shoulders and let you enjoy every moment with your loved ones. You dream of your event and we'll make it happen.</p>
 								<p></p>
 							</div>
 						</div>
@@ -48,7 +48,7 @@
 					<div class="image-column col-lg-4 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<div class="image">
-								<img src="images/resource/story.jpg" alt="" />
+								<img src="ImagesFromClient/resourceFromClient/ANR_0428 copy-01.jpeg (1)" alt="" />
 							</div>
 						</div>
 					</div>
@@ -68,7 +68,7 @@
 						<div class="image-column col-lg-4 col-md-12 col-sm-12">
 							<div class="inner-column">
 								<div class="image">
-									<img src="images/resource/interior.jpg" alt="" />
+									<img src="ImagesFromClient/resourceFromClient/ANR_1270 copy-01.jpeg" alt="resourceFromClient" />
 								</div>
 							</div>
 						</div>
@@ -129,9 +129,9 @@
 		<?php include_once("public/counterSection.php");?>
 		<!-- End Counter Section -->
 
-		<!-- Team Section -->
-		<?php include_once("public/ourTeam.php");?>
-		<!-- End Team Section -->
+		<!-- Team Section 
+		<?php// include_once("public/ourTeam.php");?>
+		 End Team Section -->
 
 		<!-- Mission Section -->
 		<section class="mission-section style-two">
@@ -142,7 +142,7 @@
 					<div class="image-column col-xl-3 col-lg-4 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<div class="image">
-								<img src="images/resource/mission.jpg" alt="" />
+								<img src="ImagesFromClient/resourceFromClient/ANR_1401 copy-01.jpeg" alt="" />
 							</div>
 						</div>
 					</div>

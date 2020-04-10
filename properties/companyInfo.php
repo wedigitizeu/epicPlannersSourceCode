@@ -37,7 +37,7 @@ function openingHours()
 
 function poweredByPL()
 {
-	echo "Powered By WedigitizeU";
+	echo "Powered By We Digitize U";
 }
 
 ?>
