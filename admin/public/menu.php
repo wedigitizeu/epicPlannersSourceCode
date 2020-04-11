@@ -2,7 +2,8 @@
     <aside class="app-sidebar">
       <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="images/logo.jpg" alt="User Image">
         <div>
-          <p class="app-sidebar__user-name"><?php echo $_SESSION["uname"];?></p>
+          <!-- <?php echo $_SESSION["uname"];?> -->
+          <p class="app-sidebar__user-name">Epic Planner's</p>
           <p class="app-sidebar__user-designation">We Create,You Celebrate</p>
         </div>
       </div>

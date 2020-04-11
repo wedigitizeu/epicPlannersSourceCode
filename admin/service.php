@@ -43,7 +43,7 @@
 
 
             <!----------form-------- -->
-            <form method="post" action="insert-new-package.php" enctype="multipart/form-data">
+            <form id="userForm" method="post" action="insert-new-package.php" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
@@ -58,7 +58,7 @@
                     <label for="exampleInputEmail1">Service Category</label>  
                     <div class="form-group">    
 
-                      <select class="form-control">
+                      <select class="form-control" id= "category" name="category">
                        <option>Please Select</option>
                         <?php
                           for($i=0;$i<count($serviceCategory);$i++)
@@ -86,46 +86,36 @@
 
                     <div class="form-group">
                       <label for="exampleInputEmail1">Title</label>
-                      <input class="form-control"  type="text" id="title" name="title" placeholder="Ex: Kerala Tour Package" />
+                      <input class="form-control"  type="text" id="title" name="title"/>
 
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label for="exampleInputEmail1">Upload Photo (555 X 555)</label>
                       <input class="form-control"  type="file" id="photo"  name="photo">
 
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Image1 alt</label>
-                      <input class="form-control"  type="text"  name="alt1">
-
-                    </div>
-
-
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Trip Days</label>
-                      <input class="form-control" id="days" name="days" type="number" 
-                      placeholder="In Days Ex:6"/>
+                      
+                      <label for="exampleInputEmail1">Image alt</label>
+                      <input class="form-control"  type="text"  name="alt">
 
                     </div>
 
 
+                    
+
+
 
                     <div class="form-group">
-
+                      
                       <label class="control-label">Short Description</label>
-                      <span style="color:red"id="characterLeft"></span><span> Charcter/s Left</span>
-                      <textarea class="form-control" rows="6" id="short_desc"
-                      name="short_desc" placeholder="Maximum 200 Letters"></textarea>
+                      <textarea class="form-control" rows="6" id="shortDesc"
+                      name="shortDesc" placeholder="Maximum 200 Letters"></textarea>
                     </div>
                     <br><br><br>
-
-
-
-
-
-
+                
                   </div>
 
 
@@ -140,18 +130,18 @@
                 <div class="col-md-12">
 
                   <h3 class="tile-title">Description</h3>
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label for="exampleInputEmail1">Upload Photo (671 X 353)</label>
                     <input class="form-control"  type="file" name="image2">
 
-                  </div>
+                  </div> 
 
 
                   <div class="form-group">
                     <label for="exampleInputEmail1">Image2  alt</label>
                     <input class="form-control"  type="text"  name="alt2">
 
-                  </div>
+                  </div>-->
 
                   <div class="tile-body">
 
@@ -168,8 +158,11 @@
 
                  <div class="form-group">
                   <input class="btn btn-danger" type="reset" value="Clear" />
-                  <input class="btn btn-success" type="submit" value="Submit"  name="sub"/>
+                  <input class="btn btn-success" type="submit" value="Save" id="save"  name="save"/>
                 </div>
+
+                <p id="response"></p>
+
 
 
 
@@ -187,7 +180,35 @@
 
 
 
+<script>
+  $(document).ready(function()
+    {
+      
+$("#save").click(function(e)
+  {
+        e.preventDefault();
+        $.ajax({
+                type: 'POST',
+                url: 'service/insert.php',
+                data: $("#userForm").serialize(),
+                beforeSend: function() {
+                    
+                    $("#response").html("Please wait...");
+                },
+                success: function(data) {
+                   
+                   $("#response").html(data);
+                }
 
+          })
+
+  });
+    
+
+
+
+    });
+</script>
 
 
     <!-- Essential javascripts for application to work Starts-->
