@@ -20,6 +20,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- CSS Emoji -->
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <!-- CK Editor -->
+    <script src="ckeditor/ckeditor.js"></script>
     
    
 </head>

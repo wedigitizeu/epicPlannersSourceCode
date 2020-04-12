@@ -118,18 +118,7 @@
                 
                   </div>
 
-
-
-
-                </div>
-                <div class="col-md-1"></div>
-
-
-                <!----- Long Description------>
-
-                <div class="col-md-12">
-
-                  <h3 class="tile-title">Description</h3>
+                   <h3 class="tile-title">Description</h3>
                   <!-- <div class="form-group">
                     <label for="exampleInputEmail1">Upload Photo (671 X 353)</label>
                     <input class="form-control"  type="file" name="image2">
@@ -143,20 +132,11 @@
 
                   </div>-->
 
-                  <div class="tile-body">
+                  <div class="form-group">
+                     <textarea id="editor1" rows="5" cols="50" name="editor1"></textarea>
+                  </div>
 
-                   <div class="form-group col-md-3">
-
-                     <textarea id="editor1" rows="10" cols="80" name="editor1"></textarea>
-
-                   </div>
-
-                 </div>
-
-
-
-
-                 <div class="form-group">
+                  <div class="form-group">
                   <input class="btn btn-danger" type="reset" value="Clear" />
                   <input class="btn btn-success" type="submit" value="Save" id="save"  name="save"/>
                 </div>
@@ -166,7 +146,13 @@
 
 
 
-              </div>`
+                </div>
+                <div class="col-md-1"></div>
+
+
+                
+
+                
             </form>
             <!-- form ends -->
 
@@ -179,7 +165,7 @@
 
 
 
-
+<script type="text/javascript"></script>
 <script>
   $(document).ready(function()
     {
@@ -215,6 +201,30 @@ $("#save").click(function(e)
 
     <?php include_once("public/js.php");?>
     <!-- Essential javascripts for application to work Ends-->
+
+
+        <!---CK EDITOR------------->
+      <script src="ckeditor/ckeditor/ckeditor.js"></script>
+
+      <script>
+      CKEDITOR.replace( 'editor1',{
+
+        width: '1000px'
+
+
+            
+
+      } );
+    </script>
+    <script>
+      CKEDITOR.on('dialogDefination',function(e)
+      {
+          dialogName=e.data.name;
+          console.log(dialogName);
+      }
+    )
+    </script>
+    <!---CK EDITOR ENDS------------>
 
   </body>
   </html>
