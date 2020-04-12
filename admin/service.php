@@ -43,7 +43,7 @@
 
 
             <!----------form-------- -->
-            <form id="userForm" method="post" action="insert-new-package.php" enctype="multipart/form-data">
+            <form id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
@@ -133,17 +133,17 @@
                   </div>-->
 
                   <div class="form-group">
-                     <textarea id="editor1" rows="5" cols="50" name="editor1"></textarea>
+                     <textarea id="editor1" rows="5" cols="30" name="editor1"></textarea>
                   </div>
 
                   <div class="form-group">
-                  <input class="btn btn-danger" type="reset" value="Clear" />
+                  <input class="btn btn-danger"  id="reset" type="reset" value="Clear" />
                   <input class="btn btn-success" type="submit" value="Save" id="save"  name="save"/>
                 </div>
 
                 <p id="response"></p>
 
-
+                <div id="desc">cxc</div>
 
 
                 </div>
@@ -169,10 +169,20 @@
 <script>
   $(document).ready(function()
     {
+$("#reset").click(function(){
 
-$("#save").click(function(e)
+  $('#userForm')[0].reset();
+
+});
+$("#save").click(function()
   {
-        e.preventDefault();
+    
+   var text=$('textarea[name="editor1"]').ckeditor();
+   
+
+   
+      
+        
         $.ajax({
                 type: 'POST',
                 url: 'service/insert.php',
@@ -184,6 +194,7 @@ $("#save").click(function(e)
                 success: function(data) {
                    
                    $("#response").html(data);
+                   alert("dsdk");
                 }
 
           })
