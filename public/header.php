@@ -81,6 +81,9 @@
 									<li>
 										<a href="tel:<?php companyMobile1();?>"><?php companyMobile1();?></a>
 									</li>
+									<li>
+										<a href="tel:<?php companyMobile2();?>"><?php companyMobile2();?></a>
+									</li>
 								</ul>
 							</div>
 						</nav>
