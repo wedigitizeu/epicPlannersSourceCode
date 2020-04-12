@@ -62,7 +62,7 @@
 										<a href="tel:<?php companyMobile2();?>" class="contact-number">
 											<?php companyMobile2();?>
 										</a>
-										
+										<h5>Company Address :</h5>
 										<ul>
 											<li><?php companyAddress();?></li>
 											<li>Email :<a href="<?php companyEmail();?>"> <?php companyEmail();?></a></li>
