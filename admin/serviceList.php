@@ -5,7 +5,7 @@ include_once("public/head.php");
 
 
 ?>
-<title><?php contactListTitle();?></title>
+<title><?php serviceListTitle();?></title>
 <body class="app sidebar-mini">
   <!-- Navbar-->
   <header class="app-header"><a class="app-header__logo" href="index.php">EP's</a>
@@ -30,9 +30,9 @@ include_once("public/head.php");
   <main class="app-content">
     <div class="app-title">
       <div>
-        <h1><i class="fa <?php contactList();?>"></i> <?php contactListTitle();?></h1>
+        <h1><i class="app-menu__icon fa <?php serviceIcon();?>"></i> <?php serviceListTitle();?></h1>
 
-        <p>Start a beautiful journey here</p>
+        <p>You can edit or delete particular service</p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -83,12 +83,12 @@ include_once("public/head.php");
                       <td><?php echo $data['time'];?></td>
                       <td><?php echo $data['title'];?></td> 
                       <td><?php echo $data['category'];?></td>
+
                       
                       <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-success btn-sm lead">Edit</button></td>
                       <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-danger btn-sm deleteBtn">Delete</button></td>
-                      
-                      
                     </tr>
+                    <input class="photoPath" type="hidden" name="photo" value="<?php echo $data['shortPath'];?>">
                     
                     <?php
                     }
@@ -150,6 +150,7 @@ include_once("public/head.php");
                 }
                 else
                 {
+                  
                   window.location.href='serviceList.php';
                 }
 
@@ -157,7 +158,8 @@ include_once("public/head.php");
 
 
           } else {
-            
+
+            //Do Nothing
           }
            
 

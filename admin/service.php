@@ -1,5 +1,6 @@
 <?php include_once("public/head.php");?>
 <?php include_once("categories/serviceCategory.php")?>
+<title><?php serviceTitle();?></title>
 
 <body class="app sidebar-mini">
   <!-- Navbar-->
@@ -25,9 +26,9 @@
   <main class="app-content">
     <div class="app-title">
       <div>
-        <h1><i class="fa fa-dashboard"></i> Gallery</h1>
+        <h1><i class="fa <?php  serviceIcon();?>"></i><?php serviceTitle();?> </h1>
 
-        <p>Start a beautiful journey here</p>
+        <p>Add new service</p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>

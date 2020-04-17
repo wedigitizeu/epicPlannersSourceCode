@@ -4,9 +4,12 @@
   (
     "Food /Catering",
     "Photography/ Videography",
-    "Mehandi / Makeup / Nail Art / Tatoo",
+    "Mehandi / Makeup",
+    "Nail Art / Tatoo",
     "Entertainment",
-    "Celebrations / Surprise planning’s / Gift ’s"
+    "Celebrations / Surprise",
+    " Planning’s/ Gift ’s",
+    "Extra Submenu"
 
     /*"Food", 
     "Catering", 

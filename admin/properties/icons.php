@@ -18,4 +18,9 @@ function leadListIcon()
 {
 	echo 'fa-money';
 }
+
+function serviceIcon()
+{
+	echo 'fa-indent';
+}
 ?>
