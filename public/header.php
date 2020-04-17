@@ -42,7 +42,7 @@
 											{
 												?>
 												<li>
-													<a href="services-dark.html">
+													<a href="services.php?category=">
 														<?php echo $serviceCategory[$i]?>
 
 													</a>
@@ -62,7 +62,7 @@
 											{
 												?>
 												<li>
-													<a href="services-dark.html">
+													<a href="services.php?category=<?php echo $serviceCategory[$i]?>">
 														<?php echo $serviceCategory[$i]?>
 
 													</a>
