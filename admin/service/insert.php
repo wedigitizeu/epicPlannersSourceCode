@@ -18,18 +18,25 @@
 include_once("../../db/db.php");
  $category=$_POST["category"];
  $title=$_POST["title"];
- $path="photo";
  $alt=$_POST["alt"];
  $shortDesc=$_POST["shortDesc"];
  $editor1=$_POST["editor1"];
 
- $date=date("d-m-Y");
-date_default_timezone_set("Asia/Calcutta");   //India time (GMT+5:30)
-$time=date("h:i a");
-$status=1;
+ $size=$_FILES["photo"]["size"];
+ $error=$_FILES["photo"]["error"];
+ $file_name=$_FILES["photo"]["name"];
+ $file_name=time()."_"."_".'epicPlanners_'.$file_name;
+ $temp_name=$_FILES["photo"]["tmp_name"];
+ $folder="../../images/serviceImages/".$file_name;
+ move_uploaded_file($temp_name, $folder);
 
-$query="INSERT INTO `service`(`date`, `time`, `title`, `shortDescription`, `shortPath`, `longDescription`, `longPath`, `status`) VALUES
- ('$date','$time','$title','$shortDesc','$path','$editor1','$path','$status')";
+
+ $date=date("d-m-Y");
+ date_default_timezone_set("Asia/Calcutta");   //India time (GMT+5:30)
+ $time=date("h:i a");
+ $status=1;
+
+$query="INSERT INTO `service`(`date`, `time`, `title`,`category`,`shortDescription`, `shortPath`, `longDescription`, `longPath`, `status`)VALUES ('$date','$time','$title','$category','$shortDesc','$file_name','$editor1','$file_name','$status')";
 
 $exe=mysqli_query($conn,$query);
 if($exe)
@@ -48,12 +55,9 @@ if($exe)
 	 <center>
 	 	<br><br>
 	 	<a title="Click Image to go Back" href="../service.php">
-			<img src="../gif/success_celebration_800x600.gif">
+			<img src="../../gif/success_celebration_800x600.gif">
 	 	</a> 
-	 	<!-- <h2 id="msg" style="color:green;" style='color:#dfb162;font-weight:bold;'><br>Service Saved Successfully..</h2>
-	 	<a href="../service.php">
-	 	 <button class="btn">Click to Back</button>
-	 	 </a> -->
+	 	
 	 	
 	 </center>
 
@@ -63,7 +67,7 @@ if($exe)
 }
 else
 {
-	echo "Error";
+	echo "Error".mysqli_error($conn);
 }
 ?>
 

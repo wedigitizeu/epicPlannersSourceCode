@@ -22,7 +22,11 @@
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <!-- CK Editor -->
     <script src="ckeditor/ckeditor.js"></script>
-
+    <script src="bootbox/bootbox.min.js"></script>
+    <script src="bootbox/bootbox.locales.js"></script>
+    <script src="bootbox/bootbox.js"></script>
+    
+      
 
     
    

@@ -54,6 +54,26 @@
 											
 										</ul>
 									</li>
+
+									<li class="dropdown"><a href="<?php galleryPLLink();?>"><?php servicePL();?></a>
+										<ul>
+											<?php
+											for($i=0;$i<count($serviceCategory);$i++)
+											{
+												?>
+												<li>
+													<a href="services-dark.html">
+														<?php echo $serviceCategory[$i]?>
+
+													</a>
+												</li>
+												
+												<?php
+											}
+											?>
+											
+										</ul>
+									</li>
 									
 									<!-- <li class="dropdown"><a href="projects-classic.html">Projects</a>
 										<ul>

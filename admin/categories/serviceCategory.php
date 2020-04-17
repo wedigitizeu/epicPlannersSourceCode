@@ -2,7 +2,13 @@
   
   $serviceCategory = array
   (
-    "Food", 
+    "Food /Catering",
+    "Photography/ Videography",
+    "Mehandi / Makeup / Nail Art / Tatoo",
+    "Entertainment",
+    "Celebrations / Surprise planning’s / Gift ’s"
+
+    /*"Food", 
     "Catering", 
     "Photography",
     "Videography",
@@ -12,7 +18,7 @@
     "Tatoo",
     "Entertainment",
     "Celebrations",
-    "Surprise Planning’s"
+    "Surprise Planning’s"*/
 );
 
 ?>

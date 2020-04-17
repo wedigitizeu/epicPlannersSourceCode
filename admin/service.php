@@ -35,26 +35,17 @@
       </ul>
     </div>
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="tile">
-          <!-- Code Starts -->
-          <div class="tile-body">
+    <!-- two fields form starts -->
 
-
-            <!----------form-------- -->
-            <form id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
-              <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-
-
-                  <!-- Trigger the modal with a button -->
-
+      
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="row">
+              <div class="col-lg-6">
+                <form service/insert.php id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
                   <div class="form-group">
-
-
-                    <br>
+                    
                     <label for="exampleInputEmail1">Service Category</label>  
                     <div class="form-group">    
 
@@ -72,67 +63,61 @@
 
 
                     </div>
+                  </div>
 
-
-
-
-
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Upload Photo (840 X 360)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01"
+                          aria-describedby="inputGroupFileAddon01" name="photo">
+                          <label class="custom-file-label" for="inputGroupFile01">
+                          Click Here
+                        </label>
+                        </div>
+                      </div>
 
 
                   </div>
-
-
-                  <div class="tile-body">
-
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Title</label>
-                      <input class="form-control"  type="text" id="title" name="title"/>
-
-                    </div>
-
-                    <!-- <div class="form-group">
-                      <label for="exampleInputEmail1">Upload Photo (555 X 555)</label>
-                      <input class="form-control"  type="file" id="photo"  name="photo">
-
-                    </div> -->
-
-                    <div class="form-group">
-                      
-                      <label for="exampleInputEmail1">Image alt</label>
-                      <input class="form-control"  type="text"  name="alt">
-
-                    </div>
-
-
-                    
-
-
-
-                    <div class="form-group">
-                      
-                      <label class="control-label">Short Description</label>
-                      <textarea class="form-control" rows="6" id="shortDesc"
-                      name="shortDesc" placeholder="Maximum 200 Letters"></textarea>
-                    </div>
-                    <br><br><br>
+                 
+                  
+                  
+                  
                 
+              </div>
+              <div class="col-lg-4 offset-lg-1">
+               
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Title</label>
+                      <input class="form-control"  type="text" id="title" name="title"/>
                   </div>
-
-                   <h3 class="tile-title">Description</h3>
-                  <!-- <div class="form-group">
-                    <label for="exampleInputEmail1">Upload Photo (671 X 353)</label>
-                    <input class="form-control"  type="file" name="image2">
-
-                  </div> 
-
-
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Image2  alt</label>
-                    <input class="form-control"  type="text"  name="alt2">
+                    <label for="exampleInputEmail1">Image alt</label>
+                      <input class="form-control"  type="text"  name="alt">
+                  </div>
+                  
+                  
+                  
+                  
+                  
+               
+              </div>
+            </div>
+            
+             <div class="form-group">
+              <label class="control-label">Short Description</label>
+              <textarea class="form-control" rows="6" id="shortDesc"
+              name="shortDesc" maxlength="200" placeholder="Maximum 200 Letters"></textarea>
 
-                  </div>-->
 
-                  <div class="form-group">
+              
+            </div>
+
+             <h3 class="tile-title">Description</h3>
+             <div class="form-group">
                      <textarea id="editor1" rows="5" cols="30" name="editor1"></textarea>
                   </div>
 
@@ -143,18 +128,22 @@
 
                 <p id="response"></p>
 
-                <div id="desc">cxc</div>
+                <div id="desc"></div>
+          
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
 
 
-                </div>
-                <div class="col-md-1"></div>
 
 
-                
+    <!-- two fields form ends -->
 
-                
-            </form>
-            <!-- form ends -->
+           
 
 
           </div>
@@ -163,7 +152,7 @@
       </div>
     </div>
 
-
+</main>
 
 <script type="text/javascript"></script>
 <script>
@@ -174,7 +163,7 @@ $("#reset").click(function(){
   $('#userForm')[0].reset();
 
 });
-$("#save").click(function()
+$("#save1").click(function()
   {
     
    var text=$('textarea[name="editor1"]').ckeditor();
@@ -220,7 +209,7 @@ $("#save").click(function()
       <script>
       CKEDITOR.replace( 'editor1',{
 
-        width: '1000px'
+        width: '1190px'
 
 
             
