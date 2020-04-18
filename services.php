@@ -1,4 +1,7 @@
 <!-- Including Head Starts -->
+<?php
+error_reporting(0)
+?>
 <?php include_once("public/head.php");?>
 <title><?php aboutusPL();?></title>
 <!-- Including Head Ends -->
@@ -19,7 +22,7 @@
 
     $data=mysqli_fetch_assoc($exe);
 
-    echo $date= $data['date'];
+    $date= $data['date'];
     $time= $data['time'];
     $title= $data['title'];
     $shortDescription= $data['shortDescription'];
@@ -45,10 +48,13 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/5.jpg)">
     	<div class="auto-container">
-         <h2>Blog Details</h2>
+         <h2><?php echo $title?></h2>
          <ul class="page-breadcrumb">
              <li><a href="index-2.html">home</a></li>
-             <li>Blog Details</li>
+             <li>
+                 
+                 <a href="whatsapp://send?text=" title="Share On Whatsapp" onclick="window.open('whatsapp://send?text=%20Take%20a%20look%20at%20this%20awesome%20page%20-%20' + encodeURIComponent(document.URL)); return false;">cvxmnm</a>
+             </li>
          </ul>
      </div>
  </section>
@@ -74,9 +80,9 @@
                <div class="lower-content">
                 <div class="post-meta">
                     <ul class="post-info clearfix">
-                        <li><a href="blog-detail.html">By : admin</a></li>
+                        <li><a href="blog-detail.html">By : <?php  companyTitle(); ?></a></li>
                         <li><a href="#"><?php echo $category ?></a></li>
-                        <li><a href="blog-detail.html">Comments: 8</a></li>
+                        <li><a href="blog-detail.html">Share</a></li>
                     </ul>
                 </div>
                 <div class="lower-box">
@@ -108,14 +114,14 @@
  <aside class="sidebar">
 
   <!-- Search -->
-  <div class="sidebar-widget search-box">
+  <!-- <div class="sidebar-widget search-box">
      <form method="post" action="templateshub.net">
         <div class="form-group">
             <input type="search" name="search-field" value="" placeholder="Enter Search Keywords" required>
             <button type="submit"><span class="icon fa fa-search"></span></button>
         </div>
     </form>
-</div>
+</div> -->
 
 <!--Blog Category Widget-->
 <div class="sidebar-widget sidebar-blog-category">

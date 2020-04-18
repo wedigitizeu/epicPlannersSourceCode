@@ -6,33 +6,46 @@ $id=$_POST["id"];
 
 
 
-	$sel="SELECT * FROM `service` WHERE id=$id;";
-	$exe=mysqli_query($conn,$sel);
-	if(mysqli_num_rows($exe)==0)
+$sel="SELECT * FROM `service` WHERE id=$id;";
+$exe=mysqli_query($conn,$sel);
+if(mysqli_num_rows($exe)==0)
+{
+	echo "false";
+	exit();
+}
+else
+{
+	$data=mysqli_fetch_assoc($exe);
+	unlink("../../images/serviceImages/".$data['shortPath']);
+
+	$category=$data['category'];
+	$query="UPDATE `category` SET `status`='0' WHERE `category`='$category'";
+	$exe=mysqli_query($conn,$query);
+	if(!$exe)
 	{
-		echo "false";
-		exit();
+		echo "category status not updated <br>";
+		echo mysqli_error($conn);
 	}
-	else
-	{
-		$data=mysqli_fetch_assoc($exe);
-		unlink("../../images/serviceImages/".$data['shortPath']);
-	}
+
+
+}
+
+
 
 
 
 $query="DELETE FROM `service` WHERE id='$id'";
 
-	$exe=mysqli_query($conn,$query);
-	if($exe)
-	{
+$exe=mysqli_query($conn,$query);
+if($exe)
+{
 
-		echo 'true';
-	}
-	else
-	{
-		echo 'false';
-	}
+	echo 'true';
+}
+else
+{
+	echo 'false';
+}
 
 
 

@@ -36,6 +36,16 @@ include_once("../../db/db.php");
  $time=date("h:i a");
  $status=1;
 
+ $query="UPDATE `category` SET `status`='1' WHERE `category`='$category'";
+ $exe=mysqli_query($conn,$query);
+ if(!$exe)
+ {
+ 	echo "category status not updated <br>";
+ 	echo mysqli_error($conn);
+ }
+
+
+
 $query="INSERT INTO `service`(`date`, `time`, `title`,`category`,`shortDescription`, `shortPath`, `longDescription`, `longPath`, `status`)VALUES ('$date','$time','$title','$category','$shortDesc','$file_name','$editor1','$file_name','$status')";
 
 $exe=mysqli_query($conn,$query);

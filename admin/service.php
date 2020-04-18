@@ -38,194 +38,218 @@
 
     <!-- two fields form starts -->
 
-      
-      <div class="row">
-        <div class="col-md-12">
-          <div class="tile">
-            <div class="row">
-              <div class="col-lg-6">
-                <form service/insert.php id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
-                  <div class="form-group">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tile">
+          <div class="row">
+            <div class="col-lg-6">
+              <form service/insert.php id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
+                <div class="form-group">
+
+                  <label for="exampleInputEmail1">Service Category</label>  
+                  <div class="form-group">    
+
+                    <select class="form-control" id= "category" name="category">
+                     <option>Please Select</option>
+
+                     <?php
+                     
+                     $query="SELECT * FROM `category` WHERE status=0";
+                     $exe=mysqli_query($conn,$query);
+
+                     if(mysqli_num_rows($exe)>0)
+                     {
+                      
+                      while($data=mysqli_fetch_assoc($exe))
+                      {
+
+                          
+                      ?>
+
+                        <option><?php echo $data['category'];?></option>
+
+
+                      <?php
+                    }
+
+
+                    }
+                    else
+                    {
+                        header("Location:serviceLimtOver.php");
+                    }
+
+                    ?>
+
                     
-                    <label for="exampleInputEmail1">Service Category</label>  
-                    <div class="form-group">    
-
-                      <select class="form-control" id= "category" name="category">
-                       <option>Please Select</option>
-                        <?php
-                          for($i=0;$i<count($serviceCategory);$i++)
-                          {
-                        ?>
-                            <option><?php echo $serviceCategory[$i]?></option>
-                        <?php
-                          }
-                        ?>
-                      </select>
+                    
+                  </select>
 
 
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                     <label for="exampleInputEmail1">Upload Photo (840 X 360)</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                        </div>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="inputGroupFile01"
-                          aria-describedby="inputGroupFileAddon01" name="photo">
-                          <label class="custom-file-label" for="inputGroupFile01">
-                          Click Here
-                        </label>
-                        </div>
-                      </div>
-
-
-                  </div>
-                 
-                  
-                  
-                  
-                
-              </div>
-              <div class="col-lg-4 offset-lg-1">
-               
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Title</label>
-                      <input class="form-control"  type="text" id="title" name="title"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Image alt</label>
-                      <input class="form-control"  type="text"  name="alt">
-                  </div>
-                  
-                  
-                  
-                  
-                  
-               
-              </div>
-            </div>
-            
-             <div class="form-group">
-              <label class="control-label">Short Description</label>
-              <textarea class="form-control" rows="6" id="shortDesc"
-              name="shortDesc" maxlength="200" placeholder="Maximum 200 Letters"></textarea>
-
-
-              
-            </div>
-
-             <h3 class="tile-title">Description</h3>
-             <div class="form-group">
-                     <textarea id="editor1" rows="5" cols="30" name="editor1"></textarea>
-                  </div>
-
-                  <div class="form-group">
-                  <input class="btn btn-danger"  id="reset" type="reset" value="Clear" />
-                  <input class="btn btn-success" type="submit" value="Save" id="save"  name="save"/>
                 </div>
+              </div>
 
-                <p id="response"></p>
+              <div class="form-group">
+               <label for="exampleInputEmail1">Upload Photo (840 X 360)</label>
+               <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01" name="photo">
+                  <label class="custom-file-label" for="inputGroupFile01">
+                    Click Here
+                  </label>
+                </div>
+              </div>
 
-                <div id="desc"></div>
-          
+
+            </div>
+
+
+
+
+
+          </div>
+          <div class="col-lg-4 offset-lg-1">
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input class="form-control"  type="text" id="title" name="title"/>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Image alt</label>
+              <input class="form-control"  type="text"  name="alt">
+            </div>
+
+
+
+
+
+
           </div>
         </div>
+
+        <div class="form-group">
+          <label class="control-label">Short Description</label>
+          <textarea class="form-control" rows="6" id="shortDesc"
+          name="shortDesc" maxlength="200" placeholder="Maximum 200 Letters"></textarea>
+
+
+
+        </div>
+
+        <h3 class="tile-title">Description</h3>
+        <div class="form-group">
+         <textarea id="editor1" rows="5" cols="30" name="editor1"></textarea>
+       </div>
+
+       <div class="form-group">
+        <input class="btn btn-danger"  id="reset" type="reset" value="Clear" />
+        <input class="btn btn-success" type="submit" value="Save" id="save"  name="save"/>
       </div>
-    </form>
+
+      <p id="response"></p>
+
+      <div id="desc"></div>
+
+    </div>
   </div>
 </div>
+</form>
+</div>
+</div>
 </div>
 
 
 
 
-    <!-- two fields form ends -->
-
-           
+<!-- two fields form ends -->
 
 
-          </div>
-          <!-- Code Ends -->
-        </div>
-      </div>
-    </div>
+
+
+</div>
+<!-- Code Ends -->
+</div>
+</div>
+</div>
 
 </main>
 
 <script type="text/javascript"></script>
 <script>
   $(document).ready(function()
-    {
-$("#reset").click(function(){
-
-  $('#userForm')[0].reset();
-
-});
-$("#save1").click(function()
   {
-    
-   var text=$('textarea[name="editor1"]').ckeditor();
-   
+    $("#reset").click(function(){
 
-   
-      
-        
-        $.ajax({
-                type: 'POST',
-                url: 'service/insert.php',
-                data: $("#userForm").serialize(),
-                beforeSend: function() {
-                    
-                    $("#response").html("Please wait...");
-                },
-                success: function(data) {
-                   
-                   $("#response").html(data);
-                   alert("dsdk");
-                }
-
-          })
-
-  });
-    
-
-
+      $('#userForm')[0].reset();
 
     });
+    $("#save1").click(function()
+    {
+
+     var text=$('textarea[name="editor1"]').ckeditor();
+
+
+
+
+
+     $.ajax({
+      type: 'POST',
+      url: 'service/insert.php',
+      data: $("#userForm").serialize(),
+      beforeSend: function() {
+
+        $("#response").html("Please wait...");
+      },
+      success: function(data) {
+
+       $("#response").html(data);
+       alert("dsdk");
+     }
+
+   })
+
+   });
+    
+
+
+
+  });
 </script>
 
 
-    <!-- Essential javascripts for application to work Starts-->
+<!-- Essential javascripts for application to work Starts-->
 
-    <?php include_once("public/js.php");?>
-    <!-- Essential javascripts for application to work Ends-->
-
-
-        <!---CK EDITOR------------->
-      <script src="ckeditor/ckeditor/ckeditor.js"></script>
-
-      <script>
-      CKEDITOR.replace( 'editor1',{
-
-        width: '1190px'
+<?php include_once("public/js.php");?>
+<!-- Essential javascripts for application to work Ends-->
 
 
-            
+<!---CK EDITOR------------->
+<script src="ckeditor/ckeditor/ckeditor.js"></script>
 
-      } );
-    </script>
-    <script>
-      CKEDITOR.on('dialogDefination',function(e)
-      {
-          dialogName=e.data.name;
-          console.log(dialogName);
-      }
-    )
-    </script>
-    <!---CK EDITOR ENDS------------>
+<script>
+  CKEDITOR.replace( 'editor1',{
 
-  </body>
-  </html>
+    width: '1190px'
+
+
+
+
+  } );
+</script>
+<script>
+  CKEDITOR.on('dialogDefination',function(e)
+  {
+    dialogName=e.data.name;
+    console.log(dialogName);
+  }
+  )
+</script>
+<!---CK EDITOR ENDS------------>
+
+</body>
+</html>
