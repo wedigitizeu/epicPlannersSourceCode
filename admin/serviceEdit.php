@@ -7,7 +7,7 @@ if(isset($_GET['id']))
 {
   $id=$_GET['id'];
 
-$sel="SELECT * FROM `Service` WHERE id=$id";
+$sel="SELECT * FROM `service` WHERE id=$id";
     $exe=mysqli_query($conn,$sel);
     if(mysqli_num_rows($exe)==0)
     {
@@ -87,7 +87,7 @@ else
                     <option value="1">Please Select</option>
                     <option value="0">Yes</option>
                     <option value="1">No</option>
-                     <option value="1">Hahao</option>
+
                     </select>
                 </div>
 
