@@ -56,4 +56,8 @@ function galleryPL()
 {
 	echo "Gallery";
 }
+function servicePL()
+{
+	echo "Service";
+}
 ?>

@@ -1,5 +1,6 @@
 <?php include_once("public/head.php");?>
 <?php include_once("categories/serviceCategory.php")?>
+<title><?php serviceTitle();?></title>
 
 <body class="app sidebar-mini">
   <!-- Navbar-->
@@ -25,9 +26,9 @@
   <main class="app-content">
     <div class="app-title">
       <div>
-        <h1><i class="fa fa-dashboard"></i> Gallery</h1>
+        <h1><i class="fa <?php  serviceIcon();?>"></i><?php serviceTitle();?> </h1>
 
-        <p>Start a beautiful journey here</p>
+        <p>Add new service</p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -35,165 +36,220 @@
       </ul>
     </div>
 
+    <!-- two fields form starts -->
+
+
     <div class="row">
       <div class="col-md-12">
         <div class="tile">
-          <!-- Code Starts -->
-          <div class="tile-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <form service/insert.php id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
+                <div class="form-group">
+
+                  <label for="exampleInputEmail1">Service Category</label>  
+                  <div class="form-group">    
+
+                    <select class="form-control" id= "category" name="category">
+                     <option>Please Select</option>
+
+                     <?php
+                     
+                     $query="SELECT * FROM `category` WHERE status=0";
+                     $exe=mysqli_query($conn,$query);
+
+                     if(mysqli_num_rows($exe)>0)
+                     {
+                      
+                      while($data=mysqli_fetch_assoc($exe))
+                      {
+
+                          
+                      ?>
+
+                        <option><?php echo $data['category'];?></option>
 
 
-            <!----------form-------- -->
-            <form method="post" action="insert-new-package.php" enctype="multipart/form-data">
-              <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
+                      <?php
+                    }
 
 
-                  <!-- Trigger the modal with a button -->
+                    }
+                    else
+                    {
+                        header("Location:serviceLimtOver.php");
+                    }
 
-                  <div class="form-group">
+                    ?>
 
-
-                    <br>
-                    <label for="exampleInputEmail1">Service Category</label>  
-                    <div class="form-group">    
-
-                      <select class="form-control">
-                       <option>Please Select</option>
-                        <?php
-                          for($i=0;$i<count($serviceCategory);$i++)
-                          {
-                        ?>
-                            <option><?php echo $serviceCategory[$i]?></option>
-                        <?php
-                          }
-                        ?>
-                      </select>
-
-
-                    </div>
-
-
-
-
-
-
-
-                  </div>
-
-
-                  <div class="tile-body">
-
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Title</label>
-                      <input class="form-control"  type="text" id="title" name="title" placeholder="Ex: Kerala Tour Package" />
-
-                    </div>
-
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Upload Photo (555 X 555)</label>
-                      <input class="form-control"  type="file" id="photo"  name="photo">
-
-                    </div>
-
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Image1 alt</label>
-                      <input class="form-control"  type="text"  name="alt1">
-
-                    </div>
-
-
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Trip Days</label>
-                      <input class="form-control" id="days" name="days" type="number" 
-                      placeholder="In Days Ex:6"/>
-
-                    </div>
-
-
-
-                    <div class="form-group">
-
-                      <label class="control-label">Short Description</label>
-                      <span style="color:red"id="characterLeft"></span><span> Charcter/s Left</span>
-                      <textarea class="form-control" rows="6" id="short_desc"
-                      name="short_desc" placeholder="Maximum 200 Letters"></textarea>
-                    </div>
-                    <br><br><br>
-
-
-
-
-
-
-                  </div>
-
-
+                    
+                    
+                  </select>
 
 
                 </div>
-                <div class="col-md-1"></div>
+              </div>
 
-
-                <!----- Long Description------>
-
-                <div class="col-md-12">
-
-                  <h3 class="tile-title">Description</h3>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Upload Photo (671 X 353)</label>
-                    <input class="form-control"  type="file" name="image2">
-
-                  </div>
-
-
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Image2  alt</label>
-                    <input class="form-control"  type="text"  name="alt2">
-
-                  </div>
-
-                  <div class="tile-body">
-
-                   <div class="form-group col-md-3">
-
-                     <textarea id="editor1" rows="10" cols="80" name="editor1"></textarea>
-
-                   </div>
-
-                 </div>
-
-
-
-
-                 <div class="form-group">
-                  <input class="btn btn-danger" type="reset" value="Clear" />
-                  <input class="btn btn-success" type="submit" value="Submit"  name="sub"/>
+              <div class="form-group">
+               <label for="exampleInputEmail1">Upload Photo (840 X 360)</label>
+               <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                 </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01" name="photo">
+                  <label class="custom-file-label" for="inputGroupFile01">
+                    Click Here
+                  </label>
+                </div>
+              </div>
+
+
+            </div>
 
 
 
-              </div>`
-            </form>
-            <!-- form ends -->
 
 
           </div>
-          <!-- Code Ends -->
+          <div class="col-lg-4 offset-lg-1">
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input class="form-control"  type="text" id="title" name="title"/>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Image alt</label>
+              <input class="form-control"  type="text"  name="alt">
+            </div>
+
+
+
+
+
+
+          </div>
         </div>
+
+        <div class="form-group">
+          <label class="control-label">Short Description</label>
+          <textarea class="form-control" rows="6" id="shortDesc"
+          name="shortDesc" maxlength="200" placeholder="Maximum 200 Letters"></textarea>
+
+
+
+        </div>
+
+        <h3 class="tile-title">Description</h3>
+        <div class="form-group">
+         <textarea id="editor1" rows="5" cols="30" name="editor1"></textarea>
+       </div>
+
+       <div class="form-group">
+        <input class="btn btn-danger"  id="reset" type="reset" value="Clear" />
+        <input class="btn btn-success" type="submit" value="Save" id="save"  name="save"/>
       </div>
+
+      <p id="response"></p>
+
+      <div id="desc"></div>
+
     </div>
+  </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- two fields form ends -->
+
+
+
+
+</div>
+<!-- Code Ends -->
+</div>
+</div>
+</div>
+
+</main>
+
+<script type="text/javascript"></script>
+<script>
+  $(document).ready(function()
+  {
+    $("#reset").click(function(){
+
+      $('#userForm')[0].reset();
+
+    });
+    $("#save1").click(function()
+    {
+
+     var text=$('textarea[name="editor1"]').ckeditor();
 
 
 
 
 
+     $.ajax({
+      type: 'POST',
+      url: 'service/insert.php',
+      data: $("#userForm").serialize(),
+      beforeSend: function() {
+
+        $("#response").html("Please wait...");
+      },
+      success: function(data) {
+
+       $("#response").html(data);
+       alert("dsdk");
+     }
+
+   })
+
+   });
+    
 
 
-    <!-- Essential javascripts for application to work Starts-->
 
-    <?php include_once("public/js.php");?>
-    <!-- Essential javascripts for application to work Ends-->
+  });
+</script>
 
-  </body>
-  </html>
+
+<!-- Essential javascripts for application to work Starts-->
+
+<?php include_once("public/js.php");?>
+<!-- Essential javascripts for application to work Ends-->
+
+
+<!---CK EDITOR------------->
+<script src="ckeditor/ckeditor/ckeditor.js"></script>
+
+<script>
+  CKEDITOR.replace( 'editor1',{
+
+    width: '1190px'
+
+
+
+
+  } );
+</script>
+<script>
+  CKEDITOR.on('dialogDefination',function(e)
+  {
+    dialogName=e.data.name;
+    console.log(dialogName);
+  }
+  )
+</script>
+<!---CK EDITOR ENDS------------>
+
+</body>
+</html>

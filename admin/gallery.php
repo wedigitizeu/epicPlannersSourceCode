@@ -59,6 +59,9 @@
                   </select> 
               </div> 
 
+
+
+
               <div class="form-group">
                   <input class="form-control" id="filez" name="files[]" type="file" multiple /> 
                   *You can upload multiple images at a time.
@@ -88,6 +91,9 @@
 
 <?php include_once("public/js.php");?>
 <!-- Essential javascripts for application to work Ends-->
+
+
+
  
  <script>  
  $(document).ready(function(){
@@ -99,7 +105,7 @@
       $('#uploadForm').on('submit', function(e){  
            e.preventDefault();  
            $.ajax({  
-                url: "upload.php",  
+                url: "gallery/upload.php",  
                 type: "POST",  
                 data: new FormData(this),  
                 contentType: false,  

@@ -38,4 +38,33 @@ function  address()
 	echo 'Address';
 }
 
+function editLabel()
+{
+	echo "Edit";
+}
+
+
+function titleLabel()
+{
+	echo "Title";
+}
+
+function categoryLabel()
+{
+	echo "Category";
+}
+
+function deleteLabel()
+{
+	echo "Delete";
+}
+
+
+function slNoLabel()
+{
+	echo "Sl.No";
+}
+
+
+
 ?>

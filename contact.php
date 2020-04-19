@@ -60,7 +60,12 @@
                  </ul>
                  <!-- Contact Info List -->
                  <ul class="contact-info-list">
-                     <li><strong>Phone : </strong><a href="tel:1800-456-7890"><?php companyMobile1() ?></a></li>
+                     <li>
+                      <strong>Phone : </strong><a href="tel:<?php companyMobile1() ?>"><?php companyMobile1() ?></a>
+                     </li>
+                     <li>
+                      <strong>Phone : </strong><a href="tel:<?php companyMobile2() ?>"><?php companyMobile2() ?></a>
+                     </li>
                      <li><strong>Email : </strong><a href="mailto:info@stellaorre.com"><?php companyEmail();?></a></li>
                  </ul>
                  <!-- Contact Info List -->

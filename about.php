@@ -142,7 +142,7 @@
 					<div class="image-column col-xl-3 col-lg-4 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<div class="image">
-								<img src="ImagesFromClient/resourceFromClient/ANR_1401 copy-01.jpeg" alt="" />
+								<img src="ImagesFromClient/resourceFromClient/epicPlannerVision.jpg" alt="" />
 							</div>
 						</div>
 					</div>
