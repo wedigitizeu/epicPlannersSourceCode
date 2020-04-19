@@ -99,7 +99,7 @@ include_once("../../db/db.php");
 
 	 <center>
 	 	<br><br>
-	 	<a title="Click Image to go Back" href="../service.php">
+	 	<a title="Click Image to go Back" href="../serviceList.php">
 			<img src="../../gif/success_celebration_800x600.gif">
 	 	</a> 
 	 	
