@@ -87,7 +87,8 @@ else
                     <option value="1">Please Select</option>
                     <option value="0">Yes</option>
                     <option value="1">No</option>
-                  </select>
+                     <option value="1">Hahao</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
