@@ -85,8 +85,16 @@ include_once("public/head.php");
                       <td><?php echo $data['category'];?></td>
 
                       
-                      <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-success btn-sm lead">Edit</button></td>
-                      <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-danger btn-sm deleteBtn">Delete</button></td>
+                      <td>
+                        <a href="serviceEdit.php?id=<?php echo  $data['id']; ?>">
+                        <button   value="<?php echo  $data['id']; ?>" class="btn btn-success btn-sm lead">Edit</button>
+                        </a>
+                      </td>
+                      <td>
+                        
+                        <button   value="<?php echo  $data['id']; ?>" class="btn btn-danger btn-sm deleteBtn">Delete</button>
+                        
+                      </td>
                     </tr>
                     <input class="photoPath" type="hidden" name="photo" value="<?php echo $data['shortPath'];?>">
                     

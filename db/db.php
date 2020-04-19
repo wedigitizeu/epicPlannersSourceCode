@@ -29,8 +29,8 @@ class database{
 	public $userName="root";
 	public $password="";
 	public $databaseName="epicPlanners";
-	public $con;*/
-
+	public $con;
+*/
 	public $host="localhost";
 	public $userName="u663901735_epic";
 	public $password="9620606548";

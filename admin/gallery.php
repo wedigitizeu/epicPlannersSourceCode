@@ -91,6 +91,9 @@
 
 <?php include_once("public/js.php");?>
 <!-- Essential javascripts for application to work Ends-->
+
+
+
  
  <script>  
  $(document).ready(function(){

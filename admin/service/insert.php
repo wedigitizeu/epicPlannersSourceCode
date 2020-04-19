@@ -53,14 +53,7 @@ if($exe)
 {
 
 ?>
-	<script>
-		$(document).ready(function()
-			{
-				
-  				$("#msg").fadeOut(8000);
-					
-			});
-	</script>
+	
 
 	 <center>
 	 	<br><br>
