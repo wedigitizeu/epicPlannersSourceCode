@@ -29,6 +29,10 @@ $sel="SELECT * FROM `Service` WHERE id=$id";
   
 
 }
+else
+{
+  echo "Error While Getting Id";
+}
 /*Getting ID of particular Service ends*/
 ?>
 <title><?php serviceTitle();?></title>
