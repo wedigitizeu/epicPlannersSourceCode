@@ -23,15 +23,16 @@ include_once("../../db/db.php");
  $size=$_FILES["photo"]["size"];
  $error=$_FILES["photo"]["error"];
  $file_name=$_FILES["photo"]["name"];
- $file_name=time()."_"."_".'epicPlanners_'.$file_name;
- $temp_name=$_FILES["photo"]["tmp_name"];
- $folder="../../images/serviceImages/".$file_name;
- move_uploaded_file($temp_name, $folder);
+ 
 
 /*Deleting Old images Starts*/
  if($file_name!="")
 	{
 		
+		$file_name=time()."_"."_".'epicPlanners_'.$file_name;
+ 		$temp_name=$_FILES["photo"]["tmp_name"];
+ 		$folder="../../images/serviceImages/".$file_name;
+ 		move_uploaded_file($temp_name, $folder);
 		
 
 		$sel="SELECT * FROM `service` WHERE id=$id";
