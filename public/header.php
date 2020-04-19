@@ -1,3 +1,4 @@
+<?php include_once("db/db.php"); ?>
 <!-- <?php include_once("admin/categories/serviceCategory.php")?> -->		
 <header class="main-header header-style-two">
 
@@ -35,42 +36,77 @@
 											<li><a href="testimonials.html">Testimonials</a></li>
 										</ul> -->
 									</li>
-									<li class="dropdown"><a href="<?php galleryPLLink();?>"><?php galleryPL();?></a>
+									
+
+									<li class="dropdown"><a href="#"><?php servicePL();?></a>
 										<ul>
+											
 											<?php
-											for($i=0;$i<count($serviceCategory);$i++)
+
+											$query="SELECT * FROM `category`";
+											$exe=mysqli_query($conn,$query);
+
+											if(mysqli_num_rows($exe)>0)
 											{
+												$records=0;
+												while($data=mysqli_fetch_assoc($exe))
+												{
 												?>
-												<li>
-													<a href="services.php?category=">
-														<?php echo $serviceCategory[$i]?>
+
+													
+													<li>
+													<a href="services.php?category=<?php echo $data['category']; ?>">
+														<?php echo $data['category']; ?>
 
 													</a>
 												</li>
-												
-												<?php
+
+
+										<?php
 											}
+
+
+											}
+
 											?>
 											
 										</ul>
 									</li>
 
-									<li class="dropdown"><a href="<?php galleryPLLink();?>"><?php servicePL();?></a>
+
+									<li class="dropdown"><a href="#"><?php galleryPL();?></a>
 										<ul>
+
 											<?php
-											for($i=0;$i<count($serviceCategory);$i++)
+
+											$query="SELECT * FROM `category`";
+											$exe=mysqli_query($conn,$query);
+
+											if(mysqli_num_rows($exe)>0)
 											{
+												$records=0;
+												while($data=mysqli_fetch_assoc($exe))
+												{
 												?>
-												<li>
-													<a href="services.php?category=<?php echo $serviceCategory[$i]?>">
-														<?php echo $serviceCategory[$i]?>
+
+													
+													<li>
+													<a href="gallery.php?category=<?php echo $data['category']; ?>">
+														<?php echo $data['category']; ?>
 
 													</a>
 												</li>
-												
-												<?php
+
+
+										<?php
 											}
+
+
+											}
+
 											?>
+
+											
 											
 										</ul>
 									</li>

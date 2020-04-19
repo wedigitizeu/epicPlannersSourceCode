@@ -23,4 +23,11 @@ function serviceIcon()
 {
 	echo 'fa-indent';
 }
+
+
+function editIcon()
+{
+	echo 'fa-pencil';
+}
+
 ?>

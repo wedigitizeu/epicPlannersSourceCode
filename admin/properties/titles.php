@@ -19,4 +19,9 @@ function serviceTitle()
 { 
 	echo " Add a Service";
 }
+
+function serviceEditTitle()
+{
+	echo "Edit Service";
+}
 ?>
