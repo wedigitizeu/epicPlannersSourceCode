@@ -2,7 +2,7 @@
 
 function contactListTitle()
 {
-	echo 'Contact List';
+	echo 'Contact Us';
 }
 
 function leadListTitle()

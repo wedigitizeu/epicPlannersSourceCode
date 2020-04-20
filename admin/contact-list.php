@@ -39,28 +39,29 @@ include_once("public/head.php");
         <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
       </ul>
     </div>
-
+    
     <div class="row">
       <div class="col-md-12">
         <div class="tile">
+          
           <!-- Code Starts -->
           <div class="tile-body">
 
             <!-- Table Starts -->
+            <form method="post" action="checkbox/delete.php">
             <div class="table-responsive">
                 <table class="table table-hover table-bordered" id="sampleTable">
                   <thead>
                     <tr>
+                      
                       <th><?php dateLabel();?></th>
                       <th><?php timeLabel();?></th>
                       <th><?php name();?></th>
-                      <!-- <th><?php email();?></th> -->
                       <th><?php mobile();?></th>
                       <th><?php looking();?></th>
                       <th><?php location();?></th>
                       <th>Action</th>
-                      <!-- <th><?php address();?></th> -->
-                      <!-- <th>PDF</th> --> 
+                      <th><input class="checkBoxAll"  type="checkbox" name=""></th>
                       
                     </tr>
                   </thead>
@@ -80,6 +81,7 @@ include_once("public/head.php");
 
                     ?>
                     <tr>
+
                       <td><?php echo $data['date'];?></td>
                       <td><?php echo $data['time'];?></td>
                       <td><?php echo $data['name'];?></td>
@@ -90,23 +92,35 @@ include_once("public/head.php");
                       <td><?php echo $data['looking'];?></td>
                       <td><?php echo $data['location'];?></td>
                       <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-danger btn-sm lead">Convert as Lead</button></td>
-                      
-                      <!-- <td><?php echo $data['address'];?></td> -->
-                       <!-- <a href="htpp://google.com">
-                        <td style="text-align:center;color:red;"><i class="fa <?php pdf();?>"></i></td>
-                      </a> -->
+                      <td>
+                        <input type="checkbox" class="checkBox"   name="chk[]" value="<?php echo  $data['id']; ?>"/>
+                      </td>
                     </tr>
                     
                     <?php
                     }
 
 
-                    echo "Total Contact List ".$_SESSION["contactListCount"]=$records;
-                    echo "<br><br>";
+                     "Total Contact List ".$_SESSION["contactListCount"]=$records;
+                   
 
                     }
                   ?>
-                    
+                   <!-- Check Box delete button Starts -->
+                   <div calss="col-md-6"></div>
+                   <div calss="col-md-6">
+                    <div class="form-group" style="float:right">
+                      <input class="btn btn-sm btn-danger"  value="Delete selected records" type="submit" 
+                      name="checkBoxDelete" required />
+
+                      <input class="btn btn-sm btn-success"  type="submit" 
+                      name="checkBoxLead" value="Convert selected records to leads" required />
+                    </div>
+
+                  </div>
+          </form>
+          <br><br><br>
+          <!-- Check Box delete button ends -->
                     
                   </tbody>
                 </table>
@@ -132,6 +146,23 @@ include_once("public/head.php");
   $(document).ready(function()
     {
       
+      $(".checkBoxAll").click(function(){
+
+          if(this.checked)
+          {
+              $(".checkBox").each(function(){
+               $(this).prop('checked','true');
+            });  
+          }
+          else
+          {
+              $(".checkBox").each(function(){
+               $(this).prop('checked',false);
+            });
+          }
+
+      });
+
        $(".lead").click(function()
         {
           var id=$(this).val();
@@ -150,8 +181,9 @@ include_once("public/head.php");
             });
 
         });
+          });
       
-    });
+   
 </script>
 <!-- Essential javascripts for application to work Ends-->
  
