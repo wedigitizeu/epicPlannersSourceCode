@@ -110,10 +110,10 @@ include_once("public/head.php");
                    <div calss="col-md-6"></div>
                    <div calss="col-md-6">
                     <div class="form-group" style="float:right">
-                      <input class="btn btn-sm btn-danger"  value="Delete selected records" type="submit" 
+                      <input class="btn btn-sm btn-danger delBtn"  value="Delete selected records" type="submit" 
                       name="checkBoxDelete" required />
 
-                      <input class="btn btn-sm btn-success"  type="submit" 
+                      <input class="btn btn-sm btn-success movBtn"  type="submit" 
                       name="checkBoxLead" value="Convert selected records to leads" required />
                     </div>
 
@@ -146,22 +146,33 @@ include_once("public/head.php");
   $(document).ready(function()
     {
       
+        $(".movBtn").prop('disabled', true);
+        $(".delBtn").prop('disabled', true);
+
       $(".checkBoxAll").click(function(){
 
           if(this.checked)
           {
               $(".checkBox").each(function(){
                $(this).prop('checked','true');
+               $(".movBtn").prop('disabled', false);
+               $(".delBtn").prop('disabled', false);
+               
+
             });  
           }
           else
           {
               $(".checkBox").each(function(){
                $(this).prop('checked',false);
+               $(".movBtn").prop('disabled', true);
+               $(".delBtn").prop('disabled', true);
+
             });
           }
 
       });
+
 
        $(".lead").click(function()
         {
