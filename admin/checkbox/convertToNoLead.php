@@ -16,7 +16,7 @@ if(isset($_POST['checkBoxLead']))
 	if($exe)
 	{
 
-		header("Location:../leadList.php");
+		header("Location:../LeadList.php");
 
 
 	}
@@ -36,7 +36,7 @@ if(isset($_POST['checkBoxDelete']))
 	if($exe)
 	{
 
-		header("Location:../leadList.php");
+		header("Location:../LeadList.php");
 
 
 	}else{
