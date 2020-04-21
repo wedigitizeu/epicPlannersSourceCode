@@ -7,6 +7,22 @@ if(isset($_POST['checkBoxLead']))
 {
 	$checkBoxDelete=$_POST['chk'];
 
+	if(count($checkBoxDelete)==0)
+	{
+		?>
+		<script type="text/javascript">
+			
+			alert("Please select atleat one record to perform action");
+			window.location.href="../LeadList.php"
+
+		</script>
+		<?php
+
+		
+	}
+	?>
+
+	<?php
 
 	$a=implode(",", $checkBoxDelete);
 
@@ -29,8 +45,24 @@ if(isset($_POST['checkBoxDelete']))
 
 	$checkBoxDelete=$_POST['chk'];
 	$a=implode(",", $checkBoxDelete);
+
+	if(count($checkBoxDelete)==0)
+	{
+		?>
+		<script type="text/javascript">
+			
+			alert("Please select atleat one record to perform action");
+			window.location.href="../LeadList.php"
+
+		</script>
+		<?php
+
+		
+	}
+
+
 	$query="DELETE FROM `contact` WHERE id in ($a)";
-	//$query="DELETE `contact` WHERE id in ($a)";
+	
 
 	$exe=mysqli_query($conn,$query);
 	if($exe)

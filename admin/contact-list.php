@@ -146,8 +146,7 @@ include_once("public/head.php");
   $(document).ready(function()
     {
       
-        $(".movBtn").prop('disabled', true);
-        $(".delBtn").prop('disabled', true);
+        
 
       $(".checkBoxAll").click(function(){
 

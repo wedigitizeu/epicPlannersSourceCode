@@ -146,11 +146,10 @@ include_once("public/head.php");
 <script type="text/javascript">
   $(document).ready(function()
     {
+       
 
-        $(".movBtn").prop('disabled', true);
-        $(".delBtn").prop('disabled', true);
 
-      $(".checkBoxAll").click(function(){
+    $(".checkBoxAll").click(function(){
 
           if(this.checked)
           {
