@@ -1,9 +1,12 @@
 <?php
 
+//local server
  $server="localhost";
  $uname="root";
  $pwd="";
  $db="epicPlanners";
+
+ //Our main Server
 
  /*$server="localhost";
  $uname="u663901735_epic";
@@ -25,13 +28,14 @@ else
 }
 
 class database{
+	//local server
 
 	public $host="localhost";
 	public $userName="root";
 	public $password="";
 	public $databaseName="epicPlanners";
 	public $con;
-
+ //Our main Server
 	/*public $host="localhost";
 	public $userName="u663901735_epic";
 	public $password="9620606548";
