@@ -15,7 +15,7 @@
         <li><a class="app-menu__item" href="gallery.php"><i class="app-menu__icon fa <?php gallery();?>"></i><span class="app-menu__label">Gallery</span></a></li>
 
         <li><a class="app-menu__item" href="contact-list.php"><i class="app-menu__icon fa <?php contactList();?>"></i><span class="app-menu__label"><?php echo contactListTitle();?></span></a></li>
-        <li><a class="app-menu__item" href="leadList.php"><i class="app-menu__icon fa <?php leadListIcon();?>"></i><span class="app-menu__label"><?php echo leadListTitle();?></span></a></li>
+        <li><a class="app-menu__item" href="LeadList.php"><i class="app-menu__icon fa <?php leadListIcon();?>"></i><span class="app-menu__label"><?php echo leadListTitle();?></span></a></li>
         
 
         <li><a class="app-menu__item" href="service.php"><i class="app-menu__icon fa <?php serviceIcon();?>"></i>

@@ -21,6 +21,7 @@ include_once("public/head.php");
       <!-- Notification Menu Ends -->
       <!-- User Menu-->
       <?php include_once("public/userMenu.php");?>
+
       <!-- User Menu Ends -->
     </ul>
   </header>
@@ -48,6 +49,7 @@ include_once("public/head.php");
 
             <!-- Table Starts -->
             <div class="table-responsive">
+              <form method="post" action="checkbox/convertToNoLead.php">
                 <table class="table table-hover table-bordered" id="sampleTable">
                   <thead>
                     <tr>
@@ -59,8 +61,7 @@ include_once("public/head.php");
                       <th><?php looking();?></th>
                       <th><?php location();?></th>
                       <th>Action</th>
-                      <!-- <th><?php address();?></th> -->
-                      <!-- <th>PDF</th> --> 
+                      <th><input class="checkBoxAll"  type="checkbox" name=""></th> 
                       
                     </tr>
                   </thead>
@@ -83,18 +84,15 @@ include_once("public/head.php");
                       <td><?php echo $data['date'];?></td>
                       <td><?php echo $data['time'];?></td>
                       <td><?php echo $data['name'];?></td>
-                      <!-- <td><?php echo $data['email'];?></td> -->
                       <a href="tel:<?php echo $data['mobile']?>">
                         <td><?php echo $data['mobile'];?></td>
                       </a>
                       <td><?php echo $data['looking'];?></td>
                       <td><?php echo $data['location'];?></td>
                       <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-success btn-sm lead">Add Event</button></td>
-                      
-                      <!-- <td><?php echo $data['address'];?></td> -->
-                       <!-- <a href="htpp://google.com">
-                        <td style="text-align:center;color:red;"><i class="fa <?php pdf();?>"></i></td>
-                      </a> -->
+                      <td>
+                        <input type="checkbox" class="checkBox"   name="chk[]" value="<?php echo  $data['id']; ?>"/>
+                      </td>
                     </tr>
                     
                     <?php
@@ -106,10 +104,27 @@ include_once("public/head.php");
 
                     }
                   ?>
+
+                    <!-- Check Box delete button Starts -->
+                   <div calss="col-md-6"></div>
+                   <div calss="col-md-6">
+                    <div class="form-group" style="float:right">
+                      <input class="btn btn-sm btn-danger delBtn"  value="Delete selected records" type="submit" 
+                      name="checkBoxDelete" required />
+
+                      <input class="btn btn-sm btn-success movBtn"  type="submit" 
+                      name="checkBoxLead" value="Move selected records to contact us list" required />
+                    </div>
+
+                  </div>
+         
+          <br><br><br>
+          <!-- Check Box delete button ends -->
                     
                     
                   </tbody>
                 </table>
+                 </form>
               </div>
             <!-- Table Ends -->
 
@@ -131,6 +146,33 @@ include_once("public/head.php");
 <script type="text/javascript">
   $(document).ready(function()
     {
+       
+
+
+    $(".checkBoxAll").click(function(){
+
+          if(this.checked)
+          {
+              $(".checkBox").each(function(){
+               $(this).prop('checked','true');
+               $(".movBtn").prop('disabled', false);
+               $(".delBtn").prop('disabled', false);
+               
+
+            });  
+          }
+          else
+          {
+              $(".checkBox").each(function(){
+               $(this).prop('checked',false);
+               $(".movBtn").prop('disabled', true);
+               $(".delBtn").prop('disabled', true);
+
+            });
+          }
+
+      });
+      
       
        $(".lead").click(function()
         {
