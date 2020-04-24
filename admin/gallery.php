@@ -95,7 +95,33 @@
 
 
  
+
  <script>  
+ $(document).ready(function(){  
+      $('#uploadForm').on('submit', function(e){  
+           e.preventDefault();  
+           $.ajax({  
+                url: "upload.php",  
+                type: "POST",  
+                data: new FormData(this),  
+                contentType: false,  
+                processData:false,  
+                success: function(data)  
+                {  
+                     $("#war").html(data);  
+                     alert("Image Uploaded");  
+                }  
+           });  
+      });  
+ });  
+ </script> 
+
+
+
+
+
+
+ <!-- <script>  
  $(document).ready(function(){
 
       $("#filez").change(function()
@@ -128,7 +154,7 @@
       });  
  });  
  </script>
-
+ -->
 
  </body>
 </html>

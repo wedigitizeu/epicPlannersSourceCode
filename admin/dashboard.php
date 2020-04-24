@@ -89,6 +89,9 @@ include_once("public/head.php");
         </div>
       </div>
     </main>
+    <form>
+      <input type="text" id="ch" value="500">
+    </form>
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -99,6 +102,8 @@ include_once("public/head.php");
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="js/plugins/chart.js"></script>
     <script type="text/javascript">
+      var ch=document.getElementById('ch').value;
+
       var data = {
       	labels: ["January", "February", "March", "April", "May"],
       	datasets: [
@@ -126,7 +131,7 @@ include_once("public/head.php");
       };
       var pdata = [
       	{
-      		value: 300,
+      		value: ch,
       		color: "#46BFBD",
       		highlight: "#5AD3D1",
       		label: "Complete"

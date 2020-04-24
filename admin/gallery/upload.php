@@ -6,6 +6,7 @@ include_once("../../db/db.php");
 
 
  
+ 
  //upload.php  
  $output = '';  
  if(is_array($_FILES))   
@@ -18,20 +19,16 @@ include_once("../../db/db.php");
            {  
                 $new_name = md5(rand()) . '.' . $file_name[1];  
                 $sourcePath = $_FILES['files']['tmp_name'][$name];  
-                $targetPath = "gallery/".$new_name;  
+                $targetPath = "upload/".$new_name;  
                 if(move_uploaded_file($sourcePath, $targetPath))  
                 {  
-                     $output ="done";  
+                     $output .= '<img src="'.$targetPath.'" width="150px" height="180px" />';  
                 }                 
            }            
       }  
       echo $output;  
  } 
- else
- {
-  echo "error";
- }
-  
+    
  
 
 
