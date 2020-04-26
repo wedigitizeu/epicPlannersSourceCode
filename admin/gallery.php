@@ -101,7 +101,7 @@
       $('#uploadForm').on('submit', function(e){  
            e.preventDefault();  
            $.ajax({  
-                url: "upload.php",  
+                url: "gallery/upload.php",  
                 type: "POST",  
                 data: new FormData(this),  
                 contentType: false,  

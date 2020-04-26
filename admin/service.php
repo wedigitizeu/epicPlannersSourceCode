@@ -1,4 +1,5 @@
 <?php include_once("public/head.php");?>
+  
 <?php include_once("categories/serviceCategory.php")?>
 <title><?php serviceTitle();?></title>
 
@@ -45,6 +46,7 @@
           <div class="row">
             <div class="col-lg-6">
               <form service/insert.php id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
+                
                 <div class="form-group">
 
                   <label for="exampleInputEmail1">Service Category</label>  
@@ -89,6 +91,15 @@
 
                 </div>
               </div>
+
+              <!-- <div class="form-group">
+               
+                <?php
+                //include_once("service/multipleImageUploadPopUp.php");
+                ?>
+              </div> -->
+              
+              
 
               <div class="form-group">
                <label for="exampleInputEmail1">Upload Photo (840 X 360)</label>

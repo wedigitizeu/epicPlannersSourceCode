@@ -2,8 +2,6 @@
 <?php 
 
 include_once("public/head.php");
-
-
 ?>
 <title><?php contactListTitle();?></title>
 <body class="app sidebar-mini">
@@ -30,9 +28,9 @@ include_once("public/head.php");
   <main class="app-content">
     <div class="app-title">
       <div>
-        <h1><i class="fa <?php contactList();?>"></i> <?php contactListTitle();?></h1>
+        <h1><i class="fa <?php deleteGalleryImagesIcon();?>"></i> <?php deleteGalleryImagesTitle();?></h1>
 
-        <p>Start a beautiful journey here</p>
+        <p>Delete gallery images  </p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -48,19 +46,17 @@ include_once("public/head.php");
           <div class="tile-body">
 
             <!-- Table Starts -->
-            <form method="post" action="checkbox/delete.php">
+            <form method="post" action="checkbox/galleryDelete.php">
             <div class="table-responsive">
                 <table class="table table-hover table-bordered" id="sampleTable">
                   <thead>
                     <tr>
                       
                       <th><?php dateLabel();?></th>
-                      <th><?php timeLabel();?></th>
                       <th><?php name();?></th>
-                      <th><?php mobile();?></th>
-                      <th><?php looking();?></th>
-                      <th><?php location();?></th>
-                      <th>Action</th>
+                      <th><?php categoryLabel();?></th>
+                      
+                     
                       <th><input class="checkBoxAll"  type="checkbox" name=""></th>
                       
                     </tr>
@@ -68,7 +64,7 @@ include_once("public/head.php");
                   <tbody>
                     <?php 
                       
-                      $query="SELECT * FROM `contact` WHERE status='nolead' ORDER BY `id` DESC";
+                      $query="SELECT * FROM `gallery` ORDER BY id DESC ";
                       $exe=mysqli_query($conn,$query);
                       
                       if(mysqli_num_rows($exe)>0)
@@ -83,15 +79,14 @@ include_once("public/head.php");
                     <tr>
 
                       <td><?php echo $data['date'];?></td>
-                      <td><?php echo $data['time'];?></td>
-                      <td><?php echo $data['name'];?></td>
-                      <!-- <td><?php echo $data['email'];?></td> -->
-                      <a href="tel:<?php echo $data['mobile']?>">
-                        <td><?php echo $data['mobile'];?></td>
-                      </a>
-                      <td><?php echo $data['looking'];?></td>
-                      <td><?php echo $data['location'];?></td>
-                      <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-danger btn-sm lead">Convert as Lead</button></td>
+                      <td>
+
+                        <center>
+                        <img width="150px" src="../images/galleryImages/<?php echo $data['name'];?>">
+                        </center>
+                        
+                      </td>
+                      <td><?php echo $data['category'];?></td>
                       <td>
                         <input type="checkbox" class="checkBox"   name="chk[]" value="<?php echo  $data['id']; ?>"/>
                       </td>
@@ -110,11 +105,10 @@ include_once("public/head.php");
                    <div calss="col-md-6"></div>
                    <div calss="col-md-6">
                     <div class="form-group" style="float:right">
-                      <input class="btn btn-sm btn-danger delBtn"  value="Delete selected records" type="submit" 
-                      name="checkBoxDelete" required />
+                      <input class="btn btn-sm btn-danger delBtn"  value="Delete selected Images" type="submit" name="checkBoxDelete"/>
 
-                      <input class="btn btn-sm btn-success movBtn"  type="submit" 
-                      name="checkBoxLead" value="Convert selected records to leads" required />
+                      <!-- <input class="btn btn-sm btn-success movBtn"  type="submit" 
+                      name="checkBoxLead" value="Convert selected records to leads" required /> -->
                     </div>
 
                   </div>
@@ -154,7 +148,7 @@ include_once("public/head.php");
           {
               $(".checkBox").each(function(){
                $(this).prop('checked','true');
-              
+               
                
 
             });  

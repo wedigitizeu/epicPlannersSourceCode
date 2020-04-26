@@ -155,8 +155,7 @@ include_once("public/head.php");
           {
               $(".checkBox").each(function(){
                $(this).prop('checked','true');
-               $(".movBtn").prop('disabled', false);
-               $(".delBtn").prop('disabled', false);
+               
                
 
             });  
@@ -165,8 +164,7 @@ include_once("public/head.php");
           {
               $(".checkBox").each(function(){
                $(this).prop('checked',false);
-               $(".movBtn").prop('disabled', true);
-               $(".delBtn").prop('disabled', true);
+              
 
             });
           }
