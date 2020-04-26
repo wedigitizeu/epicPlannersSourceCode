@@ -32,42 +32,18 @@
 				<div class="text">Survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple.</div>
 			</div>
 			
-			<div class="row clearfix">
+			<div id="loadImages"  class="row clearfix">
 				
 				
-				<?php 
-				$query="SELECT * FROM `gallery`";
-				$exe=mysqli_query($conn,$query);
-				//echo mysqli_num_rows($exe);
-				if(mysqli_num_rows($exe)>0)
-				{
-					while($data=mysqli_fetch_assoc($exe))
-					{
+				
+						<!-- Images Block Starts-->
+
+					
+
+					<!-- Images Block Ends -->
+				
+
 						
-
-				?>
-						<!-- Service Block Starts-->
-
-						<div class="service-block-three col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="residental-interior.html"><img src="admin/<?php echo $data["path"];?>" alt="" /></a>
-						</div>
-						 <div class="lower-content">
-							<h3><a href="residental-interior.html"><?php echo $data["category"]?></a></h3>
-							<!-- <div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotech Nology imme rsion along the information highway will close the loop.</div> -->
-							<!-- <a href="residental-interior.html" class="read-more">Read more</a> -->
-						</div>
-					</div> 
-				</div>
-
-					<!-- Service Block Ends -->
-				
-
-				<?php
-					}
-				}
-				?>		
 				
 
 				
@@ -79,6 +55,7 @@
 				
 				
 			</div>
+			<p id="loadImagesMsg"></p>
 
 		</div>
 	</section>
@@ -122,6 +99,54 @@
         
     </div>
 </div>
+<script>
+	$(document).ready(function(){
+		var limit=3;
+		var start=0;
+		var action='inactive';
+		function loadImageData(limit,start)
+		{
+			$.ajax({
+
+				url:"fetchImages.php",
+				method:"POST",
+				data:{limit:limit,start:start},
+				cache:false,
+				success:function(data)
+				{
+					$("#loadImages").append(data);
+					if(data==" ")
+					{
+						$("#loadImagesMsg").html("No Images Found");
+						action="active";
+					}else
+					{
+						$("#loadImagesMsg").html("Loading..");
+						action="inactive";	
+					}
+				}
+			});
+		}
+
+		if(action=='inactive')
+		{
+			action='active';
+			loadImageData(limit,start);
+
+		}
+		
+		$(window).scroll(function(){
+		  if($(window).scrollTop() + $(window).height() > $("#loadImages").height() && action == 'inactive')
+		  {
+		   action = 'active';
+		   start = start + limit;
+		   setTimeout(function(){
+		    loadImageData(limit, start);
+		   }, 1000);
+		  }
+		 });
+	});
+</script>
 
 <!--Scroll to top-->
 <script src="js/jquery.js"></script>

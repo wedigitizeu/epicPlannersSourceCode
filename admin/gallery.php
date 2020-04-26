@@ -108,8 +108,8 @@
                 processData:false,  
                 success: function(data)  
                 {  
-                     $("#war").html(data);  
-                     alert("Image Uploaded");  
+                     $("#war").html("Image/s Uploaded");  
+                       
                 }  
            });  
       });  
