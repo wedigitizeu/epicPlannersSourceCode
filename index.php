@@ -16,7 +16,7 @@
 		<?php include_once("public/slider.php");?>
 		<!-- End Banner Section -->
 		
-		<!-- Services Section Three -->
+		<!-- Services  Three -->
 		<?php include_once("public/service.php");?>
 		<!-- End Services Section -->
 		
