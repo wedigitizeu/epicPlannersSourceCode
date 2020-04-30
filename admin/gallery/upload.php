@@ -10,41 +10,52 @@ if(is_array($_FILES))
 {  
   foreach ($_FILES['files']['name'] as $name => $value)  
   {  
-      $file_name = explode(".", $_FILES['files']['name'][$name]);  
-      $allowed_ext = array("jpg", "jpeg", "png", "gif","PNG");  
-      if(in_array($file_name[1], $allowed_ext))  
-       {  
-          $new_name = "Epic-Planners-"."-".md5(rand()) . '.' . $file_name[1];  
-          $sourcePath = $_FILES['files']['tmp_name'][$name];  
-           $targetPath = "../../images/galleryImages/".$new_name;  
+    $file_name = explode(".", $_FILES['files']['name'][$name]);  
+    $allowed_ext = array("jpg", "jpeg", "png", "gif","PNG");
+    if($file_name[1]=="")
+    {
+      echo "Please upload atleat one image";
+    }  
+    else if(in_array($file_name[1], $allowed_ext))  
+    { 
+     
 
-          if($result=move_uploaded_file($sourcePath, $targetPath))  
-          {  
+        $new_name = "Epic-Planners-"."-".md5(rand()) . '.' . $file_name[1];  
+        $sourcePath = $_FILES['files']['tmp_name'][$name];  
+        $targetPath = "../../images/galleryImages/".$new_name;  
 
-            $query="INSERT INTO `gallery`(`date`, `name`, `category`, `path`) VALUES
-            ('$date','$new_name','$cat','$targetPath')";
-            if(mysqli_query($conn,$query))
-            {
-           
-              $success="<center>Uploaded Successfully</center>";
+        if($result=move_uploaded_file($sourcePath, $targetPath))  
+        {  
 
-            } 
+          $query="INSERT INTO `gallery`(`date`, `name`, `category`, `path`) VALUES
+          ('$date','$new_name','$cat','$targetPath')";
+          if(mysqli_query($conn,$query))
+          {
+
+            $success=1;
+
+          } 
           else
-            {
+          {
 
-              $error="Error:".mysqli_error($conn);
-            }
-
-
+            $error="Error:".mysqli_error($conn);
           }
 
+
         }
-            
+
+      
+    }
+    else
+    {
+      echo 'File format not supported..!';
+    }
+
   }  
-        echo "<center><img width='15%'src='../gif/success_celebration_800x600.gif'/></center>";
-        echo $success;
-        echo $error;
-        
+
+  echo $success;
+  echo $error;
+
 }
 
 ?>  

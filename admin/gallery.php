@@ -26,7 +26,7 @@
       <div>
         <h1><i class="fa <?php gallery();?>"></i> Gallery</h1>
 
-        <p>Start a beautiful journey here</p>
+        <p>Upload multiple images to gallery</p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -45,8 +45,8 @@
               <div class="form-group">
                  <label>Select Category</label>
 
-                  <select  name="serviceCategory" class="form-control">
-                  <option>Please Select</option>
+                  <select  id="serviceCategory" name="serviceCategory" class="form-control">
+                  <option value="0" >Please Select</option>
                   <?php
                     for($i=0;$i<count($serviceCategory);$i++)
                     {
@@ -72,8 +72,11 @@
 
               
              </form>
-             <div id="gallery"></div>
-             <center id="war"></center>
+            <center id="gallery"><img width="150px" src="../gif/success_celebration_800x600.gif"></center>
+             <center  id="war" style="color:#009688;">
+              </center>
+              
+              <center id="result" style="color:#009688;" ></center>
 
           </div>
           <!-- Code Ends -->
@@ -97,10 +100,20 @@
  
 
  <script>  
- $(document).ready(function(){  
-      $('#uploadForm').on('submit', function(e){  
-           e.preventDefault();  
-           $.ajax({  
+ $(document).ready(function(){ 
+  $("#gallery").css('display','none'); 
+  $("#war").css('display','none');
+      $('#uploadForm').on('submit', function(e){ 
+          e.preventDefault();  
+          if($("#serviceCategory").val()==0)
+          {
+              $("#war").css('display','block');
+              $("#war").html("<h4>Please select category</h4>");
+              $("#war").fadeOut(6000);
+
+
+          }else{
+             $.ajax({  
                 url: "gallery/upload.php",  
                 type: "POST",  
                 data: new FormData(this),  
@@ -108,10 +121,29 @@
                 processData:false,  
                 success: function(data)  
                 {  
-                     $("#war").html("Image/s Uploaded");  
-                       
+                  if(data==1)
+                  {
+
+                  $("#gallery").css('display','block');
+                  $("#gallery").fadeOut(6000);
+                  $("#war").css('display','block');
+                  $("#war").html("<h4>Done..!</h4>");
+                  $("#war").fadeOut(6000);
+                  $("#result").css('display','none');
+                 
+                  }else
+                  {
+                    $("#result").css('display','block');
+                  }
+
+                  $("#result").html("<h4>"+data+"</h4>");
+                  
+                  
                 }  
-           });  
+           });
+          } 
+           
+            
       });  
  });  
  </script> 
