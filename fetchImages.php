@@ -1,15 +1,22 @@
 
 <?php
+session_start();
 
 
 if(isset($_POST['limit'],$_POST['start']))
 {
 	$limit=$_POST['limit'];
 	$start=$_POST['start'];
+	$category=$_SESSION["category"];
+
+	
+	
+	
 	include_once('db/db.php');
 
-				$query="SELECT * FROM `gallery` ORDER BY id DESC LIMIT $start , $limit";
+				$query="SELECT * FROM `gallery` WHERE category='$category' LIMIT $start , $limit ";
 				$exe=mysqli_query($conn,$query);
+				echo mysqli_error($conn);
 
 				if(mysqli_num_rows($exe)>0)
 				{
@@ -23,11 +30,12 @@ if(isset($_POST['limit'],$_POST['start']))
 						<div class="image">
 							<a href="residental-interior.html"><img src="images/galleryImages/<?php echo $data["path"];?>" alt="" /></a>
 						</div>
-						 <div class="lower-content">
-							<h3><a href="residental-interior.html"><?php //echo $data["category"]?></a></h3>
+						 <!-- <div class="lower-content">
+							<h3><a href="residental-interior.html"><?php 
+							//echo $data["category"]?></a></h3> 
 							<div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotech Nology imme rsion along the information highway will close the loop.</div>
-							<a href="residental-interior.html" class="read-more">Read more</a>
-						</div>
+							<a href="residental-interior.html" class="read-more">Read more</a> -
+						</div> -->
 					</div> 
 				</div>
 
@@ -36,6 +44,9 @@ if(isset($_POST['limit'],$_POST['start']))
 <?php
 				
 					}
+				}
+				else {
+					//echo "No data found";
 				}
 }
 ?>
