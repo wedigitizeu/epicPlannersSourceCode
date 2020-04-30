@@ -37,7 +37,7 @@
 							<div class="bold-text">
                                                    Create your memory with us.</div>
 							<div class="text">
-								<p>
+								<p style="text-align:justify;">
 									Life is all about celebrating every little happiness and turning moments into memories. We are here to take every responsibility of your celebration on our shoulders and let you enjoy every moment with your loved ones. You dream of your event and we'll make it happen.</p>
 								<p></p>
 							</div>
@@ -77,7 +77,7 @@
 						<div class="content-column col-lg-8 col-md-12 col-sm-12">
 							<div class="inner-column">
 								<h2>Why Choose Us for Event management</h2>
-								<div class="text">
+								<div class="text" style="text-align:justify;">
 									We aim at providing you A-Z services for all your events as per your requirements and make you feel comfortable throughout the event and be stressfree.Our managers know the nuances of their craft. Whether you need assistance for creating a flower or balloon arrangement , photography and video coverage, mehandi and nail art entertainment, catering services , surprise event planning and decor, Our designers provide promising service to your requirements.
 								</div>
 								<div class="row clearfix">
@@ -152,7 +152,7 @@
 						<div class="inner-column">
 							<h2>Our Company Vision</h2>
 							<div class="bold-text">To transform your dreams into an event to be remembered for a lifetime.</div>
-							<div class="text">We strive to be your first choice in event management and your one stop shop for all your event requirements at the vicinity of your home. We assure to create an ideal event and provide you with high quality and professional results and make sure that you come back to us to plan your next event.</div>
+							<div class="text" style="text-align:justify;">We strive to be your first choice in event management and your one stop shop for all your event requirements at the vicinity of your home. We assure to create an ideal event and provide you with high quality and professional results and make sure that you come back to us to plan your next event.</div>
 							<h3>We provide services such as</h3>
 							<div class="row clearfix">
 								<div class="column col-lg-6 col-md-6 col-sm-12">
