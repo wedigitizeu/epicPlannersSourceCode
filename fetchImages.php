@@ -28,7 +28,7 @@ if(isset($_POST['limit'],$_POST['start']))
 					 <div  class="service-block-three col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="#"><img src="images/galleryImages/<?php echo $data["path"];?>" alt="" /></a>
+							<a><img src="images/galleryImages/<?php echo $data["path"];?>" alt="" /></a>
 						</div>
 						 <!-- <div class="lower-content">
 							<h3><a href="residental-interior.html"><?php 
