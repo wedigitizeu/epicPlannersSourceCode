@@ -28,9 +28,9 @@ include_once("public/head.php");
   <main class="app-content">
     <div class="app-title">
       <div>
-        <h1><i class="fa <?php deleteGalleryImagesIcon();?>"></i> <?php deleteGalleryImagesTitle();?></h1>
+        <h1><i class="fa <?php deleteGalleryImagesIcon();?>"></i> <?php deleteServicePageMoreImagesTitle();?></h1>
 
-        <p>Delete gallery images  </p>
+        <p>Delete service page images  </p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -46,7 +46,7 @@ include_once("public/head.php");
           <div class="tile-body">
 
             <!-- Table Starts -->
-            <form method="post" action="checkbox/galleryDelete.php">
+            <form method="post" action="checkbox/multipleImagesForServicePageDelete.php">
             <div class="table-responsive">
                 <table class="table table-hover table-bordered" id="sampleTable">
                   <thead>
@@ -64,7 +64,7 @@ include_once("public/head.php");
                   <tbody>
                     <?php 
                       
-                      $query="SELECT * FROM `gallery` ORDER BY id DESC ";
+                      $query="SELECT * FROM `servicepagemoreimages` ORDER BY id DESC ";
                       $exe=mysqli_query($conn,$query);
                       
                       if(mysqli_num_rows($exe)>0)
@@ -82,7 +82,7 @@ include_once("public/head.php");
                       <td>
 
                         <center>
-                        <img width="150px" src="../images/galleryImages/<?php echo $data['name'];?>">
+                        <img width="150px" src="../images/serviceImages/<?php echo $data['name'];?>">
                         </center>
                         
                       </td>

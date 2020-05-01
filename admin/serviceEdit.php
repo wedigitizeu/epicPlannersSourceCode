@@ -166,7 +166,7 @@ else
               <input class="form-control"  value="<?php  echo $title; ?>" type="text" id="title" name="title" required />
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1">Image alt</label>
+              <label for="exampleInputEmail1">SEO ranking image keyword</label>
               <input class="form-control"  type="text"  name="alt">
             </div>
 

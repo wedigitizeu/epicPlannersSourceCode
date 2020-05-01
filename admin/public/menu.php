@@ -26,6 +26,10 @@
 
         <li><a class="app-menu__item" href="serviceList.php"><i class="app-menu__icon fa <?php serviceIcon();?>"></i>
           <span class="app-menu__label"><?php echo serviceListTitle();?></span></a></li>
+          <li><a class="app-menu__item" href="multipleImagesForServicePageDelete.php"><i class="app-menu__icon fa <?php deleteGalleryImagesIcon(); ?>"></i>
+          <span class="app-menu__label"><?php deleteServicePageMoreImagesTitle();?></span></a></li>
+        
+          
 
          
         

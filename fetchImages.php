@@ -46,7 +46,7 @@ if(isset($_POST['limit'],$_POST['start']))
 					}
 				}
 				else {
-					//echo "No data found";
+					//header('Location:index.php');
 				}
 }
 ?>
