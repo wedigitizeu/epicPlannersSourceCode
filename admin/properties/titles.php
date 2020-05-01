@@ -24,4 +24,18 @@ function serviceEditTitle()
 {
 	echo "Edit Service";
 }
+
+function deleteGalleryImagesTitle()
+{
+	echo "Delete Gallery Images";
+}
+
+function deleteServicePageMoreImagesTitle()
+{
+	echo "Delete Service Images";
+}
+function imageTitle()
+{
+	echo "Image";
+}
 ?>

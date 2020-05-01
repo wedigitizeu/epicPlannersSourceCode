@@ -60,7 +60,6 @@ include_once("public/head.php");
                       <th><?php mobile();?></th>
                       <th><?php looking();?></th>
                       <th><?php location();?></th>
-                      <th>Action</th>
                       <th><input class="checkBoxAll"  type="checkbox" name=""></th>
                       
                     </tr>
@@ -91,7 +90,6 @@ include_once("public/head.php");
                       </a>
                       <td><?php echo $data['looking'];?></td>
                       <td><?php echo $data['location'];?></td>
-                      <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-danger btn-sm lead">Convert as Lead</button></td>
                       <td>
                         <input type="checkbox" class="checkBox"   name="chk[]" value="<?php echo  $data['id']; ?>"/>
                       </td>
@@ -154,8 +152,7 @@ include_once("public/head.php");
           {
               $(".checkBox").each(function(){
                $(this).prop('checked','true');
-               $(".movBtn").prop('disabled', false);
-               $(".delBtn").prop('disabled', false);
+              
                
 
             });  
@@ -164,8 +161,7 @@ include_once("public/head.php");
           {
               $(".checkBox").each(function(){
                $(this).prop('checked',false);
-               $(".movBtn").prop('disabled', true);
-               $(".delBtn").prop('disabled', true);
+               
 
             });
           }

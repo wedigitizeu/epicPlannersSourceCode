@@ -24,9 +24,9 @@
   <main class="app-content">
     <div class="app-title">
       <div>
-        <h1><i class="fa <?php gallery();?>"></i> Gallery</h1>
+       <h1><i class="fa <?php  serviceIcon();?>"></i> Multiple Images  </h1>
 
-        <p>Upload multiple images to gallery</p>
+        <p>Upload multiple images to service page</p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -39,7 +39,7 @@
         <div class="tile">
           <!-- Code Starts -->
           <div class="tile-body">
-
+            
              <form id="uploadForm" action="upload.php" method="post"> 
               
               <div class="form-group">
@@ -55,6 +55,7 @@
                   <?php
                     }
                   ?>
+
 
                   </select> 
               </div> 
@@ -114,7 +115,7 @@
 
           }else{
              $.ajax({  
-                url: "gallery/upload.php",  
+                url: "service/multipleImagesForServicePage.php",  
                 type: "POST",  
                 data: new FormData(this),  
                 contentType: false,  
@@ -147,46 +148,5 @@
       });  
  });  
  </script> 
-
-
-
-
-
-
- <!-- <script>  
- $(document).ready(function(){
-
-      $("#filez").change(function()
-        {
-          $("#gallery").css("display","none");
-        });
-      $('#uploadForm').on('submit', function(e){  
-           e.preventDefault();  
-           $.ajax({  
-                url: "gallery/upload.php",  
-                type: "POST",  
-                data: new FormData(this),  
-                contentType: false,  
-                processData:false,
-                beforeSend:function()
-                {
-                  $("#war").html("Please Wait..");
-                }, 
-                success: function(data)  
-                {  
-
-
-                     $("#gallery").css("display","block");
-                      $("#war").css("display","none");
-                     $("#gallery").html(data);
-
-                       
-                }  
-           });  
-      });  
- });  
- </script>
- -->
-
- </body>
+</body>
 </html>

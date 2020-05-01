@@ -1,5 +1,13 @@
 <?php include_once("public/head.php");?>
-<?php include_once("db/db.php");?>
+<?php include_once("db/db.php");
+session_start();
+?>
+
+<?php
+	
+	$_SESSION["category"]=$_GET['category'];
+
+?>
 
 <body>
 
@@ -13,13 +21,15 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/5.jpg)">
     	<div class="auto-container">
-        	<h2>Services</h2>
+        	<h2><?php echo $_SESSION["category"]; ?></h2>
+
             <ul class="page-breadcrumb">
-            	<li><a href="index-2.html">home</a></li>
-                <li>Services 1</li>
+            	<li><a href="index.php">home</a></li>
+                <li>Gallery</li>
             </ul>
         </div>
     </section>
+    
     <!--End Page Title-->
 	
 	<!-- Services Page Section -->
@@ -28,32 +38,19 @@
 			
 			<!-- Sec Title -->
 			<div class="sec-title light centered">
-				<h2>We Provide Different Services In Interior Field</h2>
-				<div class="text">Survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple.</div>
+				<h2>OUR AWESOME  GALLERY </h2>
+				<!-- <div class="text">Survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple.</div> -->
 			</div>
 			
 			<div id="loadImages"  class="row clearfix">
 				
 				
 				
-						<!-- Images Block Starts-->
+				  <!-- Images Block Starts-->
 
 					
 
 					<!-- Images Block Ends -->
-				
-
-						
-				
-
-				
-				
-				
-							
-				
-				
-				
-				
 			</div>
 			<p id="loadImagesMsg"></p>
 
@@ -115,13 +112,13 @@
 				success:function(data)
 				{
 					$("#loadImages").append(data);
-					if(data==" ")
+					if(data.trim()=="")
 					{
-						$("#loadImagesMsg").html("No Images Found");
+						$("#loadImagesMsg").html("Done...");
 						action="active";
 					}else
 					{
-						$("#loadImagesMsg").html("Loading..");
+						$("#loadImagesMsg").html("Loading...");
 						action="inactive";	
 					}
 				}

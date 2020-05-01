@@ -1,4 +1,5 @@
 <?php include_once("public/head.php");?>
+  
 <?php include_once("categories/serviceCategory.php")?>
 <title><?php serviceTitle();?></title>
 
@@ -37,7 +38,15 @@
     </div>
 
     <!-- two fields form starts -->
-
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tile">
+          
+           <button id="moreImages" class="btn btn-sm btn-success">Upload More Images</button>
+        
+        </div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-md-12">
@@ -45,6 +54,7 @@
           <div class="row">
             <div class="col-lg-6">
               <form service/insert.php id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
+                
                 <div class="form-group">
 
                   <label for="exampleInputEmail1">Service Category</label>  
@@ -90,6 +100,10 @@
                 </div>
               </div>
 
+              
+              
+              
+
               <div class="form-group">
                <label for="exampleInputEmail1">Upload Photo (840 X 360)</label>
                <div class="input-group">
@@ -108,6 +122,12 @@
 
             </div>
 
+            <!-- Multiple Images upload starts -->
+            
+                
+              
+              <!-- Multiple Images upload starts -->
+
 
 
 
@@ -120,7 +140,7 @@
               <input class="form-control"  type="text" id="title" name="title"/>
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1">Image alt</label>
+              <label for="exampleInputEmail1">SEO ranking image keyword</label>
               <input class="form-control"  type="text"  name="alt">
             </div>
 
@@ -183,6 +203,9 @@
 <script>
   $(document).ready(function()
   {
+    $("#moreImages").click(function(){
+      window.open("multipleImagesForServicePage.php");
+    });
     $("#reset").click(function(){
 
       $('#userForm')[0].reset();
