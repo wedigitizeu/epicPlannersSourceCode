@@ -26,7 +26,9 @@
 
 					<div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
 						<ul class="navigation clearfix">
-							<li class="dropdown"><a href="<?php homePLLink()?>"><?php homePL();?></a>
+							
+							<li class="dropdown">
+								<a href="<?php homePLLink()?>"><?php homePL();?></a>
 
 							</li>
 							<li class="dropdown"><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a>
