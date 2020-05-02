@@ -60,8 +60,8 @@
                   <label for="exampleInputEmail1">Service Category</label>  
                   <div class="form-group">    
 
-                    <select class="form-control" id= "category" name="category">
-                     <option>Please Select</option>
+                    <select class="form-control" id= "category" name="category" required>
+                     <option value="">Please Select</option>
 
                      <?php
                      
@@ -77,7 +77,7 @@
                           
                       ?>
 
-                        <option><?php echo $data['category'];?></option>
+                        <option value="<?php echo $data['category'];?>"><?php echo $data['category'];?></option>
 
 
                       <?php
@@ -112,7 +112,7 @@
                 </div>
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" id="inputGroupFile01"
-                  aria-describedby="inputGroupFileAddon01" name="photo">
+                  aria-describedby="inputGroupFileAddon01" name="photo" required>
                   <label class="custom-file-label" for="inputGroupFile01">
                     Click Here
                   </label>
@@ -137,11 +137,11 @@
 
             <div class="form-group">
               <label for="exampleInputEmail1">Title</label>
-              <input class="form-control"  type="text" id="title" name="title"/>
+              <input class="form-control"  type="text" id="title" name="title" required/>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">SEO ranking image keyword</label>
-              <input class="form-control"  type="text"  name="alt">
+              <input class="form-control"  type="text"  name="alt" required>
             </div>
 
 
@@ -163,7 +163,7 @@
 
         <h3 class="tile-title">Description</h3>
         <div class="form-group">
-         <textarea id="editor1" rows="5" cols="30" name="editor1"></textarea>
+         <textarea id="editor1" rows="5" cols="30" name="editor1" required></textarea>
        </div>
 
        <div class="form-group">

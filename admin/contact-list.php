@@ -32,7 +32,7 @@ include_once("public/head.php");
       <div>
         <h1><i class="fa <?php contactList();?>"></i> <?php contactListTitle();?></h1>
 
-        <p>Start a beautiful journey here</p>
+        <p>Contacted List</p>
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
