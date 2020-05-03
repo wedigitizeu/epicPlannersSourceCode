@@ -3,8 +3,8 @@
 			
 			<!-- Sec Title -->
 			<div class="sec-title light centered">
-				<h2>One stop for home interiors</h2>
-				<div class="text">To give you a home that lasts, we bring you only the best in everything — quality raw materials, state-of-the-art manufacturing, rigorous quality checks, professional installations and transparent prices.</div>
+				<h2>Make every occasion unforgettable<br>by joining hands with us</h2>
+				<div class="text">We provide you ample ideas tallying with your requirements for you to enjoy your event peacefully. Epic Planner's main aim is to render cost-effective service with superior quality products and best catering which provides finger-licking good food.</div>
 			</div>
 			
 			<div class="row clearfix">
@@ -16,9 +16,9 @@
 							<a href="residental-interior.html"><img src="images/resource/service-4.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
-							<h3><a href="residental-interior.html">25 + Interior Designers</a></h3>
-							<div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
-							<a href="residental-interior.html" class="read-more">Read more</a>
+							<h3><a href="#">Decorations</a></h3>
+							<div class="text" style="text-align:justify;">Our designs are jaw-dropping & we provide quality products in our decorations. The flowers we use in our decorations are vibrant and refreshing.</div>
+							<a href="residental-interior.html" class="read-more"></a>
 						</div>
 					</div>
 				</div>
@@ -30,9 +30,9 @@
 							<a href="office-interior.html"><img src="images/resource/service-5.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
-							<h3><a href="office-interior.html">Furtiniture, Decor & More</a></h3>
-							<div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information ...</div>
-							<a href="office-interior.html" class="read-more">Read more</a>
+							<h3><a href="office-interior.html">Catering services</a></h3>
+							<div class="text" style="text-align:justify;">We provide different varieties of delicious catering services which include north Indian, south Indian, Chinese, desserts, ice creams, fast food etc., </div>
+							<a href="office-interior.html" class="read-more"></a>
 						</div>
 					</div>
 				</div>
@@ -44,9 +44,9 @@
 							<a href="commercial-interior.html"><img src="images/resource/service-6.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
-							<h3><a href="commercial-interior.html">Modular Solutions</a></h3>
-							<div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
-							<a href="commercial-interior.html" class="read-more">Read more</a>
+							<h3><a href="commercial-interior.html">Photography & videography</a></h3>
+							<div class="text" style="text-align:justify;">We capture your happiness in our cameras. We present you exclusive offers at low prices with numerous designs and assure you an astounding event.</div>
+							<a href="commercial-interior.html" class="read-more"></a>
 						</div>
 					</div>
 				</div>
@@ -58,9 +58,9 @@
 							<a href="commercial-interior.html"><img src="images/resource/service-7.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
-							<h3><a href="commercial-interior.html">On Site Expertise</a></h3>
-							<div class="text">Override the digital divide with additional clickthroughs from DevOps. Nanotechnology imme rsion along the information highway will close the loop.</div>
-							<a href="commercial-interior.html" class="read-more">Read more</a>
+							<h3><a href="commercial-interior.html"> Make up & Mehendi</a></h3>
+							<div class="text" style="text-align:justify;">we have a very punctual, professional,  soft-spoken, and dedicated artist with loads of patience. Our artist will complete the Mehendi neatly always open to trying out new designs.</div>
+							<a href="commercial-interior.html" class="read-more"</a>
 						</div>
 					</div>
 				</div>
