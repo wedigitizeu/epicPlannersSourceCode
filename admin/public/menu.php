@@ -8,7 +8,15 @@
         </div>
       </div>
       <ul class="app-menu">
+        
+        <li><a class="app-menu__item" href="../index.php"><i class="app-menu__icon fa fa-globe"></i><span class="app-menu__label">Visit Site</span></a></li>
+
         <li><a class="app-menu__item" href="dashboard.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+
+        <li><a class="app-menu__item" href="https://www.addthis.com/dashboard#dashboard-analytics"><i class="app-menu__icon fa fa-line-chart"></i><span class="app-menu__label">
+          <?php analyticsTitle();?>
+        </span></a></li>
+        
        
         
 

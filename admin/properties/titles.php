@@ -27,15 +27,19 @@ function serviceEditTitle()
 
 function deleteGalleryImagesTitle()
 {
-	echo "Delete Gallery Images";
+	echo " Gallery Images";
 }
 
 function deleteServicePageMoreImagesTitle()
 {
-	echo "Delete Service Images";
+	echo " Service Images";
 }
 function imageTitle()
 {
 	echo "Image";
+}
+function analyticsTitle()
+{
+	echo "Page Share Analytics";
 }
 ?>

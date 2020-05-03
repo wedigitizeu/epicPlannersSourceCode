@@ -21,9 +21,9 @@
           <div class="form-group">
             <div class="utility">
               <div class="animated-checkbox">
-                <label>
+                <!-- <label>
                   <input type="checkbox"><span class="label-text">Stay Signed in</span>
-                </label>
+                </label> -->
               </div>
               <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p>
             </div>

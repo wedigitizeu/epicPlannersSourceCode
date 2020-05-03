@@ -12,6 +12,10 @@ $query="SELECT * FROM `service`";
 $exe=mysqli_query($conn,$query);
 $totalServices=mysqli_num_rows($exe);
 
+$query="SELECT * FROM `category`";
+$exe=mysqli_query($conn,$query);
+$totalCategories=mysqli_num_rows($exe);
+
                       
 
 ?>
@@ -79,7 +83,7 @@ $totalServices=mysqli_num_rows($exe);
           <div class="widget-small danger coloured-icon"><i class="icon fa <?php echo serviceIcon(); ?> fa-3x"></i>
             <div class="info">
               <h4>Total Services</h4>
-              <p><b><?php echo $totalServices;?></b></p>
+              <p><b><?php echo $totalServices." / ".$totalCategories;?></b></p>
             </div>
           </div>
         </div>
