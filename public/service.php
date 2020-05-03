@@ -13,7 +13,7 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="residental-interior.html"><img src="images/resource/service-4.jpg" alt="" /></a>
+							<a href="residental-interior.html"><img src="images/resource/service4.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
 							<h3><a href="#">Decorations</a></h3>
@@ -41,7 +41,7 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="commercial-interior.html"><img src="images/resource/service-6.jpg" alt="" /></a>
+							<a href="commercial-interior.html"><img src="images/resource/service.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
 							<h3><a href="commercial-interior.html">Photography & videography</a></h3>

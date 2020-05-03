@@ -159,14 +159,14 @@
 									<ul class="list-style-two">
 										<li>-  Decorations and backdrops</li>
 										<li>-  Photography and Video coverage</li>
-										<li>- Entertainments  </li>
+										<li>  </li>
 									</ul>
 								</div>
 								<div class="column col-lg-6 col-md-6 col-sm-12">
 									<ul class="list-style-two">
 										<li>-  	Food and catering</li>
 										<li>-  	Surprise event planning and surprise gifts</li>
-										<li></li>
+										<li>  </li>
 									</ul>
 								</div>
 							</div>
