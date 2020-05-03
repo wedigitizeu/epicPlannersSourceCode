@@ -37,7 +37,7 @@ include_once("public/head.php");
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-        <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
+        <li class="breadcrumb-item"><a href="#">Leads</a></li>
       </ul>
     </div>
 
@@ -60,7 +60,7 @@ include_once("public/head.php");
                       <th><?php mobile();?></th>
                       <th><?php looking();?></th>
                       <th><?php location();?></th>
-                      <th>Action</th>
+                      <!-- <th>Action</th> -->
                       <th><input class="checkBoxAll"  type="checkbox" name=""></th> 
                       
                     </tr>
@@ -89,8 +89,8 @@ include_once("public/head.php");
                       </a>
                       <td><?php echo $data['looking'];?></td>
                       <td><?php echo $data['location'];?></td>
-                      <td><button   value="<?php echo  $data['id']; ?>" class="btn btn-success btn-sm lead">Add Event</button></td>
-                      <td>
+                      <!-- <td><button   value="<?php //echo  $data['id']; ?>" class="btn btn-success btn-sm lead">Add Event</button></td>-->
+                      <td> 
                         <input type="checkbox" class="checkBox"   name="chk[]" value="<?php echo  $data['id']; ?>"/>
                       </td>
                     </tr>
@@ -155,8 +155,7 @@ include_once("public/head.php");
           {
               $(".checkBox").each(function(){
                $(this).prop('checked','true');
-               $(".movBtn").prop('disabled', false);
-               $(".delBtn").prop('disabled', false);
+               
                
 
             });  
@@ -165,8 +164,7 @@ include_once("public/head.php");
           {
               $(".checkBox").each(function(){
                $(this).prop('checked',false);
-               $(".movBtn").prop('disabled', true);
-               $(".delBtn").prop('disabled', true);
+              
 
             });
           }

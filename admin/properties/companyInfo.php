@@ -18,4 +18,9 @@ function companyEmail()
 	echo "email";
 }
 
+function title()
+{
+	echo "Epic Planner's";
+}
+
 ?>

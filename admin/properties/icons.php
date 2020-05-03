@@ -29,5 +29,9 @@ function editIcon()
 {
 	echo 'fa-pencil';
 }
+function deleteGalleryImagesIcon()
+{
+	echo "fa-trash";
+}
 
 ?>

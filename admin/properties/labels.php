@@ -65,6 +65,9 @@ function slNoLabel()
 	echo "Sl.No";
 }
 
-
+function imageNameLabel()
+{
+	echo "";
+}
 
 ?>

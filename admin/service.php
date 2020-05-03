@@ -1,4 +1,5 @@
 <?php include_once("public/head.php");?>
+  
 <?php include_once("categories/serviceCategory.php")?>
 <title><?php serviceTitle();?></title>
 
@@ -32,12 +33,20 @@
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-        <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
+        <li class="breadcrumb-item"><a href="#">Service</a></li>
       </ul>
     </div>
 
     <!-- two fields form starts -->
-
+    <div class="row">
+      <div class="col-md-12">
+        <div class="tile">
+          
+           <button id="moreImages" class="btn btn-sm btn-success">Upload More Images</button>
+        
+        </div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-md-12">
@@ -45,13 +54,14 @@
           <div class="row">
             <div class="col-lg-6">
               <form service/insert.php id="userForm" method="post" action="service/insert.php" enctype="multipart/form-data">
+                
                 <div class="form-group">
 
                   <label for="exampleInputEmail1">Service Category</label>  
                   <div class="form-group">    
 
-                    <select class="form-control" id= "category" name="category">
-                     <option>Please Select</option>
+                    <select class="form-control" id= "category" name="category" required>
+                     <option value="">Please Select</option>
 
                      <?php
                      
@@ -67,7 +77,7 @@
                           
                       ?>
 
-                        <option><?php echo $data['category'];?></option>
+                        <option value="<?php echo $data['category'];?>"><?php echo $data['category'];?></option>
 
 
                       <?php
@@ -90,6 +100,10 @@
                 </div>
               </div>
 
+              
+              
+              
+
               <div class="form-group">
                <label for="exampleInputEmail1">Upload Photo (840 X 360)</label>
                <div class="input-group">
@@ -98,7 +112,7 @@
                 </div>
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" id="inputGroupFile01"
-                  aria-describedby="inputGroupFileAddon01" name="photo">
+                  aria-describedby="inputGroupFileAddon01" name="photo" required>
                   <label class="custom-file-label" for="inputGroupFile01">
                     Click Here
                   </label>
@@ -107,6 +121,12 @@
 
 
             </div>
+
+            <!-- Multiple Images upload starts -->
+            
+                
+              
+              <!-- Multiple Images upload starts -->
 
 
 
@@ -117,11 +137,11 @@
 
             <div class="form-group">
               <label for="exampleInputEmail1">Title</label>
-              <input class="form-control"  type="text" id="title" name="title"/>
+              <input class="form-control"  type="text" id="title" name="title" required/>
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1">Image alt</label>
-              <input class="form-control"  type="text"  name="alt">
+              <label for="exampleInputEmail1">SEO ranking image keyword</label>
+              <input class="form-control"  type="text"  name="alt" required>
             </div>
 
 
@@ -143,7 +163,7 @@
 
         <h3 class="tile-title">Description</h3>
         <div class="form-group">
-         <textarea id="editor1" rows="5" cols="30" name="editor1"></textarea>
+         <textarea id="editor1" rows="5" cols="30" name="editor1" required></textarea>
        </div>
 
        <div class="form-group">
@@ -183,6 +203,9 @@
 <script>
   $(document).ready(function()
   {
+    $("#moreImages").click(function(){
+      window.open("multipleImagesForServicePage.php");
+    });
     $("#reset").click(function(){
 
       $('#userForm')[0].reset();

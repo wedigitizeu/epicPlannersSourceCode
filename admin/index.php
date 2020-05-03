@@ -5,33 +5,36 @@
     </section>
     <section class="login-content">
       <div class="logo">
-        <h1><?php echo title();?></h1>
+        <h1><?php echo "Epic Planner's" ?></h1>
       </div>
       <div class="login-box">
-        <form class="login-form" action="index.html">
+        <div class="login-form">
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
           <div class="form-group">
             <label class="control-label">USERNAME</label>
-            <input class="form-control" type="text" placeholder="Email" autofocus>
+            <input class="form-control" id="email" name="email" type="text" placeholder="Email" autofocus>
           </div>
           <div class="form-group">
             <label class="control-label">PASSWORD</label>
-            <input class="form-control" type="password" placeholder="Password">
+            <input class="form-control" id="password" name="password" type="password" placeholder="Password">
           </div>
           <div class="form-group">
             <div class="utility">
               <div class="animated-checkbox">
-                <label>
+                <!-- <label>
                   <input type="checkbox"><span class="label-text">Stay Signed in</span>
-                </label>
+                </label> -->
               </div>
               <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p>
             </div>
           </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+            <button id="sub" name="sub" class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+            
+            <center id="response" style="color:red;font-weight:bold;"></center>
           </div>
-        </form>
+          
+        </div>
         <form class="forget-form" action="index.html">
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Forgot Password ?</h3>
           <div class="form-group">
@@ -46,20 +49,46 @@
           </div>
         </form>
       </div>
+      
     </section>
-    <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
-    <script type="text/javascript">
-      // Login Page Flipbox control
-      $('.login-content [data-toggle="flip"]').click(function() {
-      	$('.login-box').toggleClass('flipped');
-      	return false;
+
+
+    <script>
+      function eraseMsg()
+      {
+        $("#response").html(" ");
+        
+      }
+
+    $(document).ready(function()
+    {
+      
+      
+
+      $("#email").focus(eraseMsg);
+      $("#password").focus(eraseMsg);
+
+
+      $("#sub").click(function()
+      {
+            var email=$("#email").val();
+            var password=$("#password").val();
+            
+            $.post("insert.php",
+            {
+              email:email,
+              password:password
+            },
+            function(data)
+            {
+             
+
+              $("#response").html(data);
+              
+            });
       });
+    });
+
     </script>
-  </body>
-</html>
+
+    <?php include_once("public/footer.php");?>
