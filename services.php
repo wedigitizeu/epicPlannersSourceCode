@@ -4,8 +4,24 @@ error_reporting(0);
 session_start();
 ?>
 <?php include_once("public/head.php");?>
-<title><?php aboutusPL();?></title>
+<title><?php servicePL();?></title>
 <!-- Including Head Ends -->
+<style type="text/css">
+  .whatsappShare
+  {
+    display:none !important;
+  }
+
+  @media screen and (max-width:480px) {
+
+  .whatsappShare
+  {
+    display:block !important;
+  }
+ 
+}
+  
+</style>
 <body>
 
 
@@ -58,10 +74,7 @@ else{
      <h2><?php echo $title?></h2>
      <ul class="page-breadcrumb">
        <li><a href="index-2.html">home</a></li>
-       <li>
-
-         <a href="whatsapp://send?text=" title="Share On Whatsapp" onclick="window.open('whatsapp://send?text=%20Take%20a%20look%20at%20this%20awesome%20page%20-%20' + encodeURIComponent(document.URL)); return false;">cvxmnm</a>
-       </li>
+       <li><?php servicePl();?></li>
      </ul>
    </div>
  </section>
@@ -87,9 +100,12 @@ else{
          <div class="lower-content">
           <div class="post-meta">
             <ul class="post-info clearfix">
-              <li><a href="blog-detail.html">By : <?php  companyTitle(); ?></a></li>
+              <li><a href="#">By : <?php  companyTitle(); ?></a></li>
               <li><a href="#"><?php echo $category ?></a></li>
-              <li><a href="blog-detail.html">Share</a></li>
+              <li class="whatsappShare">
+                <a href="whatsapp://send?text=" title="Share On Whatsapp" onclick="window.open('whatsapp://send?text=%20Take%20a%20look%20at%20this%20awesome%20page%20-%20' + encodeURIComponent(document.URL)); return false;"> Share with <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                 </a>
+              </li>
             </ul>
           </div>
           <div class="lower-box">

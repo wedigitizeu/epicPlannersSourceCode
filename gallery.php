@@ -1,4 +1,5 @@
 <?php include_once("public/head.php");?>
+<title><?php galleryPL();?></title>
 <?php include_once("db/db.php");
 session_start();
 ?>

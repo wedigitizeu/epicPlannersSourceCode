@@ -17,7 +17,7 @@
 						</div>
 						<div class="lower-content">
 							<h3><a href="#">Decorations</a></h3>
-							<div class="text" style="text-align:justify;">Our designs are jaw-dropping & we provide quality products in our decorations. The flowers we use in our decorations are vibrant and refreshing.</div>
+							<div class="text" style="text-align:justify;">Our designs are jaw-dropping & we provide quality products in our decorations. The flowers we use in our decorations are vibrant and refreshing.<br><br></div>
 							<a href="residental-interior.html" class="read-more"></a>
 						</div>
 					</div>
@@ -31,7 +31,7 @@
 						</div>
 						<div class="lower-content">
 							<h3><a href="office-interior.html">Catering services</a></h3>
-							<div class="text" style="text-align:justify;">We provide different varieties of delicious catering services which include north Indian, south Indian, Chinese, desserts, ice creams, fast food etc., </div>
+							<div class="text" style="text-align:justify;">We provide different varieties of delicious catering services which include north Indian, south Indian, Chinese, desserts, ice creams, fast food etc.,<br><br> </div>
 							<a href="office-interior.html" class="read-more"></a>
 						</div>
 					</div>
@@ -68,9 +68,9 @@
 			</div>
 			
 			<!-- Button Box -->
-			<div class="btn-box text-center">
+			<!-- <div class="btn-box text-center">
 				<a href="residental-interior.html" class="theme-btn btn-style-three"><span class="txt">View all Services</span></a>
-			</div>
+			</div> -->
 			
 		</div>
 	</section>
