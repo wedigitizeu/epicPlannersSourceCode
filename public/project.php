@@ -2,8 +2,9 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title light centered">
-				<h2>Interior For All Design & Budget</h2>
-				<div class="text">Choose from thousands of designs. Heart your favorites to shortlist.</div>
+				<h2>Events For All occasions & Budget</h2>
+				<div class="text">We know that you are having a hectic time worrying about the event to make it a grand success. Organizing the event by yourself augments your pressure. 
+Focus on your guest and make the event successful</div>
 			</div>
 		</div>
 		

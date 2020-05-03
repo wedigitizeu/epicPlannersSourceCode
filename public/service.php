@@ -3,7 +3,7 @@
 			
 			<!-- Sec Title -->
 			<div class="sec-title light centered">
-				<h2>Make every occasion unforgettable by joining hands with us</h2>
+				<h2>Make every occasion unforgettable<br>by joining hands with us</h2>
 				<div class="text">We provide you ample ideas tallying with your requirements for you to enjoy your event peacefully. Epic Planner's main aim is to render cost-effective service with superior quality products and best catering which provides finger-licking good food.</div>
 			</div>
 			
@@ -31,7 +31,7 @@
 						</div>
 						<div class="lower-content">
 							<h3><a href="office-interior.html">Catering services</a></h3>
-							<div class="text">We provide different varieties of delicious catering services which include north Indian, south Indian, Chinese, desserts, ice creams, fast food etc., </div>
+							<div class="text" style="text-align:justify;">We provide different varieties of delicious catering services which include north Indian, south Indian, Chinese, desserts, ice creams, fast food etc., </div>
 							<a href="office-interior.html" class="read-more"></a>
 						</div>
 					</div>
@@ -45,7 +45,7 @@
 						</div>
 						<div class="lower-content">
 							<h3><a href="commercial-interior.html">Photography & videography</a></h3>
-							<div class="text">We capture your happiness in our cameras. We present you exclusive offers at low prices with numerous designs and assure you an astounding event.</div>
+							<div class="text" style="text-align:justify;">We capture your happiness in our cameras. We present you exclusive offers at low prices with numerous designs and assure you an astounding event.</div>
 							<a href="commercial-interior.html" class="read-more"></a>
 						</div>
 					</div>
@@ -59,7 +59,7 @@
 						</div>
 						<div class="lower-content">
 							<h3><a href="commercial-interior.html"> Make up & Mehendi</a></h3>
-							<div class="text">we have a very punctual, professional,  soft-spoken, and dedicated artist with loads of patience. Our artist will complete the Mehendi neatly always open to trying out new designs.</div>
+							<div class="text" style="text-align:justify;">we have a very punctual, professional,  soft-spoken, and dedicated artist with loads of patience. Our artist will complete the Mehendi neatly always open to trying out new designs.</div>
 							<a href="commercial-interior.html" class="read-more"</a>
 						</div>
 					</div>
