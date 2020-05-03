@@ -81,7 +81,7 @@
                  <!-- Contact Info List -->
                  <ul class="contact-info-list">
                     <li class="whatsappShare">
-                       <a href="https://wa.me/<?php companyMobile2() ?>/?text=">
+                       <a href="https://wa.me/<?php companyMobile2() ?>/?text=I+found+your+number+in+Epic+Planner%27s+%2C+Please+ping+me">
                            <img src="images/whatsapp.png" width="10%">
                         </a>
                      </li>
