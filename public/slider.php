@@ -6,7 +6,7 @@
 			
 				<!-- Slide -->
 				<div class="slide">
-                	<div class="image-layer" style="background-image:url(images/main-slider/epic1.jpg)"></div>
+                	<div class="image-layer" style="background-image:url(images/main-slider/slider_epicPlanners_3.jpg)"></div>
 					<div class="auto-container">
 						<div class="content">
 							<h2> FOCUS ON THE WORTHY <br> </h2>
@@ -20,7 +20,7 @@
 				
 				<!-- Slide -->
 				<div class="slide">
-                	<div class="image-layer" style="background-image:url(images/main-slider/epic2.jpg)"></div>
+                	<div class="image-layer" style="background-image:url(images/main-slider/slider_epicPlanners_1.jpg)"></div>
 					<div class="auto-container">
 						<div class="content">
 							<h2> WE CREATE YOU CELEBRATE<br> </h2>
@@ -34,7 +34,7 @@
 				
 				<!-- Slide -->
 				<div class="slide">
-                	<div class="image-layer" style="background-image:url(images/main-slider/KAL_5881-01-01.jpg)"></div>
+                	<div class="image-layer" style="background-image:url(images/main-slider/slider_epicPlanners_2.jpg)"></div>
 					<div class="auto-container">
 						<div class="content">
 							<h2> WE WORK FOR OUR CUSTOMER'S SATISFACTION <br> </h2>

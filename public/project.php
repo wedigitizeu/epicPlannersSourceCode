@@ -16,7 +16,7 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/epic1.jpg" alt="">
+							<img src="images/gallery/epicPlannerEvents_5.jpg" alt="">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
@@ -35,7 +35,7 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/DSC_4792.jpg" alt="">
+							<img src="images/gallery/epicPlannerEvents_4.jpg" alt="">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
@@ -54,7 +54,7 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/DSC_4577.jpg" alt="">
+							<img src="images/gallery/epicPlannerEvents_3.jpg" alt="">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
@@ -73,7 +73,7 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/DSC_4761.jpg" alt="">
+							<img src="images/gallery/epicPlannerEvents_2.jpg" alt="">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
@@ -92,7 +92,7 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/DSC_4797.jpg" alt="">
+							<img src="images/gallery/epicPlannerEvents_1.jpg" alt="">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">

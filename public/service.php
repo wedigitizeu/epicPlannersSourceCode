@@ -13,7 +13,7 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="residental-interior.html"><img src="images/resource/DSC_4687.jpg" alt="" /></a>
+							<a href="residental-interior.html"><img src="images/resource/service_epicPlanners_1.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
 							<h3><a href="#">Decorations</a></h3>
@@ -27,7 +27,7 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="office-interior.html"><img src="images/resource/national-catering-1.jpg" alt="" /></a>
+							<a href="office-interior.html"><img src="images/resource/service_epicPlanners_2.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
 							<h3><a href="office-interior.html">Catering services</a></h3>
@@ -41,7 +41,7 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="commercial-interior.html"><img src="images/resource/DSC_4583.jpg" alt="" /></a>
+							<a href="commercial-interior.html"><img src="images/resource/service_epicPlanners_3.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
 							<h3><a href="commercial-interior.html">Photography & videography</a></h3>
@@ -55,7 +55,7 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="commercial-interior.html"><img src="images/resource/ANR_1401 copy-01.jpg" alt="" /></a>
+							<a href="commercial-interior.html"><img src="images/resource/service_epicPlanners_4.jpg" alt="" /></a>
 						</div>
 						<div class="lower-content">
 							<h3><a href="commercial-interior.html"> Make up & Mehendi</a></h3>
