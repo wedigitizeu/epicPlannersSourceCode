@@ -13,12 +13,12 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="residental-interior.html"><img src="images/resource/service_epicPlanners_1.jpg" alt="<?php companyTitle();?>" /></a>
+							<a href=""><img src="images/resource/service_epicPlanners_1.jpg" alt="<?php companyTitle();?>" /></a>
 						</div>
 						<div class="lower-content">
 							<h3><a href="#">Decorations</a></h3>
 							<div class="text" style="text-align:justify;">Our designs are jaw-dropping & we provide quality products in our decorations. The flowers we use in our decorations are vibrant and refreshing.<br><br></div>
-							<a href="residental-interior.html" class="read-more"></a>
+							<a href="" class="read-more"></a>
 						</div>
 					</div>
 				</div>
@@ -27,12 +27,12 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="office-interior.html"><img src="images/resource/service_epicPlanners_2.jpg" alt="<?php companyTitle();?>" /></a>
+							<a href=""><img src="images/resource/service_epicPlanners_2.jpg" alt="<?php companyTitle();?>" /></a>
 						</div>
 						<div class="lower-content">
-							<h3><a href="office-interior.html">Catering services</a></h3>
+							<h3><a href="">Catering services</a></h3>
 							<div class="text" style="text-align:justify;">We provide different varieties of delicious catering services which include north Indian, south Indian, Chinese, desserts, ice creams, fast food etc.,<br><br> </div>
-							<a href="office-interior.html" class="read-more"></a>
+							<a href="" class="read-more"></a>
 						</div>
 					</div>
 				</div>
@@ -41,12 +41,12 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="commercial-interior.html"><img src="images/resource/service_epicPlanners_3.jpg" alt="<?php companyTitle();?>" /></a>
+							<a href=""><img src="images/resource/service_epicPlanners_3.jpg" alt="<?php companyTitle();?>" /></a>
 						</div>
 						<div class="lower-content">
-							<h3><a href="commercial-interior.html">Photography & videography</a></h3>
+							<h3><a href="">Photography & videography</a></h3>
 							<div class="text" style="text-align:justify;">We capture your happiness in our cameras. We present you exclusive offers at low prices with numerous designs and assure you an astounding event.</div>
-							<a href="commercial-interior.html" class="read-more"></a>
+							<a href="" class="read-more"></a>
 						</div>
 					</div>
 				</div>
@@ -55,12 +55,12 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href="commercial-interior.html"><img src="images/resource/service_epicPlanners_4.jpg" alt="<?php companyTitle();?>" /></a>
+							<a href=""><img src="images/resource/service_epicPlanners_4.jpg" alt="<?php companyTitle();?>" /></a>
 						</div>
 						<div class="lower-content">
-							<h3><a href="commercial-interior.html"> Make up & Mehendi</a></h3>
+							<h3><a href=""> Make up & Mehendi</a></h3>
 							<div class="text" style="text-align:justify;">we have a very punctual, professional,  soft-spoken, and dedicated artist with loads of patience. Our artist will complete the Mehendi neatly always open to trying out new designs.</div>
-							<a href="commercial-interior.html" class="read-more"</a>
+							<a href="" class="read-more"</a>
 						</div>
 					</div>
 				</div>
@@ -69,7 +69,7 @@
 			
 			<!-- Button Box -->
 			<!-- <div class="btn-box text-center">
-				<a href="residental-interior.html" class="theme-btn btn-style-three"><span class="txt">View all Services</span></a>
+				<a href="" class="theme-btn btn-style-three"><span class="txt">View all Services</span></a>
 			</div> -->
 			
 		</div>
