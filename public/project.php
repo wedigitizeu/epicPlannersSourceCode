@@ -16,13 +16,13 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/epicPlannerEvents_5.jpg" alt="<?php companyTitle();?>">
+							<img src="images/gallery/9.jpg" alt="<?php companyTitle();?>">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
 										<h3><a href=""> Event Gallery</a></h3>
-										<a href="images/gallery/8.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>
@@ -35,13 +35,13 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/epicPlannerEvents_4.jpg" alt="<?php companyTitle();?>">
+							<img src="images/gallery/epicPlannerEvents_4.jpeg" alt="<?php companyTitle();?>">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
 										<h3><a href=""> Event Gallery</a></h3>
-										<a href="images/gallery/9.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>
@@ -54,13 +54,13 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/epicPlannerEvents_3.jpg" alt="<?php companyTitle();?>">
+							<img src="images/gallery/epicPlannerEvents_3.jpeg" alt="<?php companyTitle();?>">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
 										<h3><a href="">Event Gallery</a></h3>
-										<a href="images/gallery/11.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>
@@ -73,13 +73,13 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/epicPlannerEvents_2.jpg" alt="<?php companyTitle();?>">
+							<img src="images/gallery/epicPlannerEvents_2.jpeg" alt="<?php companyTitle();?>">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
 										<h3><a href="">Event Gallery</a></h3>
-										<a href="images/gallery/10.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>
@@ -92,13 +92,13 @@ Focus on your guest and make the event successful</div>
 				<div class="gallery-item  masonry-item col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box">
 						<figure class="image-box">
-							<img src="images/gallery/epicPlannerEvents_1.jpg" alt="<?php companyTitle();?>">
+							<img src="images/gallery/epicPlannerEvents_1.jpeg" alt="<?php companyTitle();?>">
 							<!--Overlay Box-->
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
 										<h3><a href="">Event Gallery</a></h3>
-										<a href="images/gallery/12.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>

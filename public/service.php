@@ -13,7 +13,7 @@
 				<div class="service-block-three col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="image">
-							<a href=""><img src="images/resource/service_epicPlanners_1.jpg" alt="<?php companyTitle();?>" /></a>
+							<a href=""><img src="images/resource/service_epicPlanners_1.jpeg" alt="<?php companyTitle();?>" /></a>
 						</div>
 						<div class="lower-content">
 							<h3><a href="#">Decorations</a></h3>
