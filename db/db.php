@@ -33,6 +33,8 @@ class database{
 	public $con;
 	*/
 	public $host="localhost";
+	
+/*	public $host="localhost";
 	public $userName="u663901735_epic";
 	public $password="9620606548";
 	public $databaseName="u663901735_epic";
