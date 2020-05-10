@@ -62,7 +62,7 @@ else{
 
 <div class="page-wrapper">
   <!-- Preloader -->
-  <div class="preloader"></div>
+  <!-- <div class="preloader"></div> -->
 
   <!-- Main Header / Header Style Two -->
   <?php include_once("public/header.php");?>   
