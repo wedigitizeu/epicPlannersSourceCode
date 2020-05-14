@@ -2,8 +2,11 @@
 
 include_once("../../db/db.php");
 
-$id=$_POST["id"];
 
+if(isset($_POST['id']))
+{
+
+$id=$_POST["id"];
 
 
 $sel="SELECT * FROM `service` WHERE id=$id;";
@@ -28,6 +31,11 @@ else
 	}
 
 
+}
+
+}else
+{
+	header('Location:../404/index.php');
 }
 
 
