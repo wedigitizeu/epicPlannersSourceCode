@@ -32,7 +32,6 @@ class database{
 	public $databaseName="epicPlanners";
 	public $con;
 	*/
-	public $host="localhost";
 	
 	public $host="localhost";
 	public $userName="u663901735_epic";
