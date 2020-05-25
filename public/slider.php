@@ -6,11 +6,11 @@
 			
 				<!-- Slide -->
 				<div class="slide">
-                	<div class="image-layer" style="background-image:url(images/main-slider/4.jpg)"></div>
+                	<div class="image-layer" style="background-image:url(images/main-slider/slider_epicPlanners_3.jpg)"></div>
 					<div class="auto-container">
 						<div class="content">
-							<h2>We Make Dream Home <br> in a Reality</h2>
-							<div class="text">Since 1989, We inspired fragmeants of your life stories with the finest kitchens, wardrobes, bedroom sets and living & dining .</div>
+							<h2> FOCUS ON THE WORTHY <br> </h2>
+							<div class="text">Transfer the burden from your shoulders to us don't juggle between organizing and attending your guests.</div>
 							<div class="btns-box">
 								<a href="#" class="theme-btn btn-style-one"><span class="txt">Know more</span></a>
 							</div>
@@ -20,11 +20,11 @@
 				
 				<!-- Slide -->
 				<div class="slide">
-                	<div class="image-layer" style="background-image:url(images/main-slider/5.jpg)"></div>
+                	<div class="image-layer" style="background-image:url(images/main-slider/slider_epicPlanners_1.jpg)"></div>
 					<div class="auto-container">
 						<div class="content">
-							<h2>Designs Benefitting <br> Your Persona</h2>
-							<div class="text">Since 1989, We inspired fragmeants of your life stories with the finest kitchens, wardrobes, bedroom sets and living & dining .</div>
+							<h2> WE CREATE YOU CELEBRATE<br> </h2>
+							<div class="text">The real secret to getting things done is knowing what things need to be left undone.</div>
 							<div class="btns-box">
 								<a href="#" class="theme-btn btn-style-one"><span class="txt">Know more</span></a>
 							</div>
@@ -34,11 +34,11 @@
 				
 				<!-- Slide -->
 				<div class="slide">
-                	<div class="image-layer" style="background-image:url(images/main-slider/6.jpg)"></div>
+                	<div class="image-layer" style="background-image:url(images/main-slider/slider_epicPlanners_2.jpg)"></div>
 					<div class="auto-container">
 						<div class="content">
-							<h2>Solution for <br> Modern Furniture</h2>
-							<div class="text">Since 1989, We inspired fragments of your life stories with the finest kitchens, wardrobes, bedroom sets and living & dining.</div>
+							<h2> WE WORK FOR OUR CUSTOMER'S SATISFACTION <br> </h2>
+							<div class="text">We manage every event right from the first birthday of your adorable child to their marriages.</div>
 							<div class="btns-box">
 								<a href="#" class="theme-btn btn-style-one"><span class="txt">Know more</span></a>
 							</div>

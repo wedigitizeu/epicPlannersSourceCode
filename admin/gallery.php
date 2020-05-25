@@ -30,7 +30,7 @@
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-        <li class="breadcrumb-item"><a href="#">Blank Page</a></li>
+        <li class="breadcrumb-item"><a href="#">Gallery</a></li>
       </ul>
     </div>
 
@@ -45,8 +45,8 @@
               <div class="form-group">
                  <label>Select Category</label>
 
-                  <select  id="serviceCategory" name="serviceCategory" class="form-control">
-                  <option value="0" >Please Select</option>
+                  <select  id="serviceCategory" name="serviceCategory" class="form-control" required>
+                  <option value="" >Please Select</option>
                   <?php
                     for($i=0;$i<count($serviceCategory);$i++)
                     {

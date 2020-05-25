@@ -1,4 +1,4 @@
-<section class="featured-section" style="background-image: url(images/background/2.jpg)">
+<section class="featured-section" style="background-image: url(images/background/5.jpg)">
 		<div class="auto-container">
 			<!-- Title Box -->
 			<div class="title-box">

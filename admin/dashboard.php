@@ -12,12 +12,16 @@ $query="SELECT * FROM `service`";
 $exe=mysqli_query($conn,$query);
 $totalServices=mysqli_num_rows($exe);
 
+$query="SELECT * FROM `category`";
+$exe=mysqli_query($conn,$query);
+$totalCategories=mysqli_num_rows($exe);
+
                       
 
 ?>
   <body class="app sidebar-mini">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+    <header class="app-header"><a class="app-header__logo" href="index.html">EP's</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
@@ -79,7 +83,7 @@ $totalServices=mysqli_num_rows($exe);
           <div class="widget-small danger coloured-icon"><i class="icon fa <?php echo serviceIcon(); ?> fa-3x"></i>
             <div class="info">
               <h4>Total Services</h4>
-              <p><b><?php echo $totalServices;?></b></p>
+              <p><b><?php echo $totalServices." / ".$totalCategories;?></b></p>
             </div>
           </div>
         </div>

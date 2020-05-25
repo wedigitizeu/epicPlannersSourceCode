@@ -1,4 +1,5 @@
 <?php include_once("public/head.php");?>
+<title><?php galleryPL();?></title>
 <?php include_once("db/db.php");
 session_start();
 ?>
@@ -157,6 +158,8 @@ session_start();
 <script src="js/appear.js"></script>
 <script src="js/scrollbar.js"></script>
 <script src="js/script.js"></script>
+
+
 </body>
 
 <!-- stella-orre/services-dark.html  30 Nov 2019 03:49:44 GMT -->

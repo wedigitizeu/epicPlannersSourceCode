@@ -1,12 +1,29 @@
 <!-- Including Head Starts -->
 <?php include_once("public/head.php");?>
-<title><?php aboutusPL();?></title>
+<title><?php conatctPL();?></title>
 <!-- Including Head Ends -->
+
+<style type="text/css">
+  .whatsappShare
+  {
+    display:none !important;
+  }
+
+  @media screen and (max-width:480px) {
+
+  .whatsappShare
+  {
+    display:block !important;
+  }
+ 
+}
+  
+</style>
 <body>
 
     <div class="page-wrapper">
         <!-- Preloader -->
-        <div class="preloader"></div>
+        <!-- <div class="preloader"></div> -->
 
         <!-- Main Header / Header Style Two -->
         <?php include_once("public/header.php");?>   
@@ -29,7 +46,10 @@
           <div class="auto-container">
              <!-- Sec Title -->
              <div class="sec-title">
-                <h2>Get In Touch</h2>
+                <h2>Get In Touch
+                    
+                </h2>
+                
                 <div class="text">Do you have anything in your mind to let us know?  Kindly don't delay to connect to us by means of our contact form.</div>
             </div>
 
@@ -60,13 +80,20 @@
                  </ul>
                  <!-- Contact Info List -->
                  <ul class="contact-info-list">
+                    <li class="whatsappShare">
+                       <a href="https://wa.me/<?php companyMobile2() ?>/?text=I+found+your+number+in+Epic+Planner%27s+%2C+Please+ping+me">
+                           <img src="images/whatsapp.png" width="10%">
+                        </a>
+                     </li>
                      <li>
                       <strong>Phone : </strong><a href="tel:<?php companyMobile1() ?>"><?php companyMobile1() ?></a>
                      </li>
                      <li>
                       <strong>Phone : </strong><a href="tel:<?php companyMobile2() ?>"><?php companyMobile2() ?></a>
                      </li>
+                     
                      <li><strong>Email : </strong><a href="mailto:info@stellaorre.com"><?php companyEmail();?></a></li>
+                     
                  </ul>
                  <!-- Contact Info List -->
                  <ul class="contact-info-list">
@@ -119,6 +146,7 @@
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
 <script src="js/map-script.js"></script>
  --><!--End Google Map APi-->
+
 </body>
 
 <!-- stella-orre/contact.html  30 Nov 2019 03:46:47 GMT -->

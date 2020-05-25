@@ -1,12 +1,15 @@
 <!-- Including Head Starts -->
 <?php include_once("public/head.php");?>
 <!-- Including Head Ends -->
+<title><?php homePl();?></title>
 <body class="dark-layout">
 	
 
 	<div class="page-wrapper">
 		<!-- Preloader -->
-		<div class="preloader"></div>
+		<!-- <div class="preloader"></div> -->
+
+
 
 		<!-- Main Header / Header Style Two -->
 		<?php include_once("public/header.php");?>   
@@ -16,7 +19,7 @@
 		<?php include_once("public/slider.php");?>
 		<!-- End Banner Section -->
 		
-		<!-- Services Section Three -->
+		<!-- Services  Three -->
 		<?php include_once("public/service.php");?>
 		<!-- End Services Section -->
 		
@@ -31,13 +34,16 @@
 		<!-- Counter Section -->
 		<?php include_once("public/counterSection.php")?>
 		<!-- End Counter Section -->
+		<!-- Our Work Process -->
 		<?php include_once("public/featured.php")?>
 		<!-- Featured Section -->
 		
 		<!-- End Featured Section -->
 		
 		<!-- News Section -->
-		<?php include_once("public/news.php");?>
+		<?php //include_once("public/news.php");?>
+		<br><br><br><br>
+
 		<!-- End News Section -->
 		
 		<!--Main Footer-->
@@ -51,6 +57,8 @@
 	<?php include_once("public/scrollToTop.php");?>
 	<!--Scroll to top-->
 	<?php include_once("public/js.php");?>
+
+
 </body>
 
 <!-- stella-orre/index-2.html  30 Nov 2019 03:48:03 GMT -->
