@@ -9,7 +9,7 @@
 			<div class="logo-outer">
 
 
-				<div class="logo"><a href="<?php homePLLINK();?>"><img src="images/logo.jpg" alt="<?php companyTitle();?>" title="" ></a></div>
+				<div class="logo"><a href="<?php homePLLINK();?>"><img src="images/logo8.png" alt="<?php companyTitle();?>" title="" ></a></div>
 			</div>
 
 

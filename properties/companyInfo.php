@@ -27,7 +27,7 @@ function companyMobile2()
 
 function companyEmail()
 {
-	echo "email";
+	echo "epicplannersep@gmail.com";
 }
 
 function openingHours() 
