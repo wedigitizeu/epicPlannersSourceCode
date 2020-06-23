@@ -23,7 +23,7 @@
 
     <div class="page-wrapper">
         <!-- Preloader -->
-        <!-- <div class="preloader"></div> -->
+        <div class="preloader"></div>
 
         <!-- Main Header / Header Style Two -->
         <?php include_once("public/header.php");?>   
@@ -110,22 +110,15 @@
 <!-- End Contact Form Section -->
 
 <!-- Map Section -->
-<section class="map-section">
-    <div class="outer-container">
-        <div class="map-outer">
-            <div class="map-canvas"
-            data-zoom="12"
-            data-lat="-37.817085"
-            data-lng="144.955631"
-            data-type="roadmap"
-            data-hue="#ffc400"
-            data-title="Melbourne Australia"
-            data-icon-path="images/icons/map-marker.png"
-            data-content="(1800) 456 7890 <br> Mon-Sat: 7.00an - 9.00pm">
-        </div>
+
+    <div class="row">
+     <div class="col-md-12">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.881746118973!2d77.51309391482275!3d13.043198390808998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAyJzM1LjUiTiA3N8KwMzAnNTUuMCJF!5e0!3m2!1sen!2sin!4v1592935412311!5m2!1sen!2sin" width="1350" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          
+  
     </div>
 </div>
-</section>
+<br>
 <!-- End Map Section -->
 
 <!--Main Footer-->
