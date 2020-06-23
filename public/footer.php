@@ -21,9 +21,10 @@
                                     </div>
                                     <ul class="social-icons">
                                         <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                        <li><a href="<?php?>"><span class="fab fa-linkedin-in"></span></a></li>
                                         <li><a href="#"><span class="fab fa-twitter"></span></a></li>
                                         <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+
                                     </ul>
 								</div>
 							</div>
@@ -57,7 +58,7 @@
 									<div class="widget-content">
 										<i class="fa fa-phone" aria-hidden="true"
 										style="color: #E9D689"></i>
-										<a href="tel:<?php companyMobile2();?>" class="contact-number" style="color: #FFFFFF">
+										<a href="tel:<?php companyMobile1();?>" class="contact-number" style="color: #FFFFFF">
 											<?php companyMobile1();?>
 										</a><br>
                                           <i class="fa fa-phone" aria-hidden="true" style="color: #E9D689"></i>
@@ -83,7 +84,7 @@
 									<div class="text" style="color: #FFFFFF">Get Special offers & Discounts</div>
 									<!-- Newsletter Form -->
 									<div class="newsletter-form">
-										<form method="post" action="templateshub.net">
+										<form method="post" action="#">
 											<div class="form-group">
 												<input type="email" name="email" value="" placeholder="Enter your email address" required>
 												<button type="submit" class="theme-btn btn-style-one"><span class="txt">Subscribe</span></button>
