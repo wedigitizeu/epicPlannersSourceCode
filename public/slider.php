@@ -49,7 +49,7 @@
 			</div>
 			
 			<!-- Social Icons -->
-			<ul class="social-icons">
+			<ul class="social-icons" style="visibility: hidden;">
 				<li><a href="<?php faceBook();?>"><span class="fab fa-facebook-f"></span></a></li>
 				<li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
 				<li><a href="#"><span class="fab fa-twitter"></span></a></li>
