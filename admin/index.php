@@ -1,11 +1,12 @@
 <?php include_once("public/head.php");?>
+<?php include_once("properties/companyInfo.php");?>
   <body>
     <section class="material-half-bg">
       <div class="cover"></div>
     </section>
     <section class="login-content">
-      <div class="logo">
-        <h1><?php echo "Epic Planner's" ?></h1>
+      <div class="" style="color:white;">
+        <h1><?php title(); ?></h1>
       </div>
       <div class="login-box">
         <div class="login-form">

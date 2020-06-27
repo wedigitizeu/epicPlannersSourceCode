@@ -1,7 +1,7 @@
 <?php
 function companyAddress()
 {
-	echo "#2458, 3rd Cross,<br>Prashanth Nagar T-Dasarahalli<br>Bangalore -560057"
+	echo "#2458, 3rd Cross,<br>Prashanth Nagar T-Dasarahalli<br>Bangalore -560057";
 }
 function companyMobile1()
 {

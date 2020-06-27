@@ -28,6 +28,10 @@ else
 	{
 		echo "category status not updated <br>";
 		echo mysqli_error($conn);
+	}else
+	{
+		$logDescription="Deleted nphotos in a service, which is having id number ".$id." and category ".$category;
+			include_once("../log/log.php");
 	}
 
 
@@ -49,6 +53,11 @@ if($exe)
 {
 
 	echo 'true';
+	else
+	
+		$logDescription="Deleted nphotos in a service, which is having id number ".$id." and category ".$category;
+			include_once("../log/log.php");
+	
 }
 else
 {

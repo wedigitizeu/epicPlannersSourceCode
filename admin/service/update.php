@@ -45,6 +45,8 @@ if(isset($_POST['id']))
 		unlink("../../images/serviceImages/".$data['shortPath']);
 		$query="UPDATE `service` SET `shortPath`='$file_name',longPath='$file_name' WHERE id=$id";
 
+
+
 		if(!$obj->insertQuery($query))
 		{
 			echo "<center>
@@ -54,6 +56,10 @@ if(isset($_POST['id']))
 			</center>";
 			echo mysqli_error($conn);
 
+		}else
+		{
+			$logDescription="Deleted and re-uploaded  photos in a service, which is having id number ".$id;
+			include_once("../log/log.php");
 		}
 
 	}
@@ -78,6 +84,7 @@ if(isset($_POST['id']))
 	 `shortDescription`='$shortDesc',
 	 `longDescription`='$editor1',
 	 `status`='$status' WHERE id='$id'";
+
 	 $exe=mysqli_query($conn,$query);
  if(!$exe)
  {
@@ -86,6 +93,8 @@ if(isset($_POST['id']))
  }
  else
  {
+ 		$logDescription="Updated a service which is having id number to  ".$id;
+		include_once("../log/log.php");
 
  	?>
  	
