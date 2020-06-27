@@ -2,21 +2,29 @@
 
 function faceBook()
 {
-	echo "facebook/epicPlanner's";
+	echo "https://www.facebook.com/Epic-Planners-105509014550778/";
+}
+function linkdin()
+{
+ echo "https://www.linkedin.com/in/epic-planner-s-4050451aa";
 }
 function twitter()
 {
-	echo "#";
+	echo "https://mobile.twitter.com/EpicPlanner";
 }	
-function instagram()
+function gmail()
 {
 	echo "#";
 	
 }
-function linkedin()
+function Insta()
 {
 	echo "https://instagram.com/epic_planneers?igshid=1x3upznpxloq9";
 	
 }
+ function googlePlus(){
+
+ }
+
 
 ?>
