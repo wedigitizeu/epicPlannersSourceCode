@@ -118,7 +118,7 @@
   
     </div>
 </div>
-<br>
+<br
 <!-- End Map Section -->
 
 <!--Main Footer-->
