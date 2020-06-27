@@ -175,7 +175,8 @@
 							<li><a href="#"><span class="fab fa-instagram"></span></a></li>
 							<li><a href="#"><span class="fab fa-youtube"></span></a></li>
 						</ul>
-					</div> --> <?php include_once("public/socialMediaHeader.php");?>
+					</div> --> 
+					<?php include_once("public/socialMediaHeader.php");?>
 					
 
 				</nav>
