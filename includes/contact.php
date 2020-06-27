@@ -27,7 +27,7 @@
 
 		
 		<div class="form-group col-lg-12 col-md-12 col-sm-12">
-			<button   id="submit" class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Submit now</span>
+			<button   id="submit" class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Send now</span>
 			</button>
 			<center id="warning"></center>
 		</div>

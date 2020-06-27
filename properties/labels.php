@@ -15,7 +15,7 @@ function  name()
 
 function email ()
 {
-	echo 'Email';
+	echo 'epicplannersep@gmail.com';
 }
 
 function mobilePL()

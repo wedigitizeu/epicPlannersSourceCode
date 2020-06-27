@@ -21,8 +21,8 @@ Focus on your guest and make the event successful</div>
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
-										<h3><a href=""> Event Gallery</a></h3>
-										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<h3><a href=""> </a></h3>
+										<a style="display: none;" href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1" ></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>
@@ -40,8 +40,8 @@ Focus on your guest and make the event successful</div>
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
-										<h3><a href=""> Event Gallery</a></h3>
-										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<h3><a href=""> </a></h3>
+										<a style="display: none;" href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>
@@ -59,8 +59,8 @@ Focus on your guest and make the event successful</div>
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
-										<h3><a href="">Event Gallery</a></h3>
-										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<h3><a href=""></a></h3>
+										<a style="display: none;" href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>
@@ -78,8 +78,8 @@ Focus on your guest and make the event successful</div>
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
-										<h3><a href="">Event Gallery</a></h3>
-										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<h3><a href=""></a></h3>
+										<a style="display: none;" href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>
@@ -97,8 +97,8 @@ Focus on your guest and make the event successful</div>
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
-										<h3><a href="">Event Gallery</a></h3>
-										<a href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
+										<h3><a href=""></a></h3>
+										<a style="display: none;" href="" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-magnifying-glass-1"></span></a>
 										<a href="" class="link"><span class="icon flaticon-unlink"></span></a>
 									</div>
 								</div>

@@ -2,11 +2,9 @@
 
 error_reporting(0);
 include_once("../../db/db.php");
-if(isset($_POST['serviceCategory']))
-{
-  
-  $cat=$_POST['serviceCategory'];
-  $date=date("d-m-Y");  
+
+$cat=$_POST['serviceCategory'];
+$date=date("d-m-Y");  
 
 if(is_array($_FILES))   
 {  
@@ -59,11 +57,5 @@ if(is_array($_FILES))
   echo $error;
 
 }
-}else
-{
-  header('Location:../404/index.php');
-}
-
-
 
 ?>  

@@ -1,16 +1,22 @@
 <?php
 
+
  /*$server="localhost";
  $uname="root";
  $pwd="";
- $db="epicPlanners";*/
-
+ $db="epicPlanners";
  $server="localhost";
+ $server="localhost";
+ $uname="root";
+ $pwd="";
+ $db="epicPlanners";*/
+/*
+ $server="localhost";
+
  $uname="u663901735_epic";
  $pwd="9620606548";
  $db="u663901735_epic";
-
- //u663901735_epic
+*/
 
 $conn=mysqli_connect($server,$uname,$pwd,$db);
 if(!$conn)
@@ -24,14 +30,18 @@ else
 	
 }
 
-class database{
-/*
-	public $host="localhost";
+class database{ 
+
+	/*public $host="localhost";
 	public $userName="root";
 	public $password="";
 	public $databaseName="epicPlanners";
 	public $con;
+
+
 */
+
+
 	
 	public $host="localhost";
 	public $userName="u663901735_epic";

@@ -18,7 +18,7 @@
 			<div class="auto-container">
 				<h2><?php aboutusPL();?></h2>
 				<ul class="page-breadcrumb">
-					<li><a href="index-2.html"><?php homePL();?></a></li>
+					<li><a href="index.php"><?php homePL();?></a></li>
 					<li><?php aboutusPL();?></li>
 				</ul>
 			</div>

@@ -14,29 +14,33 @@
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
                                     	<a href="index-2.html"><img src="images/logo.jpg" alt="" /></a>
-                                    	<h3><?php companyTitle();?></h3>
+                                    	<h3 style="color: #E9D689"><?php companyTitle();?></h3>
                                     </div>
-                                    <div class="text">
+                                    <div class="text" style="color: #FFFFFF">
                                     	To transform your dreams into an event to be remembered for a lifetime.
                                     </div>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
-                                    </ul>
+                                    
+                                   <!--  <ul class="social-icons">
+                                        <li><a href="<?php faceBook();?>"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="<?php  linkdin()?>"><span class="fab fa-linkedin-in"></span></a></li>
+                                        <li><a href="<?php twitter()?>"><span class="fab fa-twitter"></span></a></li>
+                                        <li><a href="<?php Insta();?>"><span class="fab fa-instagram"></span></a></li>
+
+                                    </ul> -->
+                                 <?php include_once("public/socialMediaFooter.php");?>
+                                 
 								</div>
 							</div>
 							
 							<!--Footer Column-->
                             <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
-                                	<h2>Quick links</h2>
+                                	<h2 style="color: #E9D689">Quick links</h2>
 									<div class="widget-content">
 										<ul class="list">
-                                        	<li><a href="<?php homePLLink();?>"><?php homePL();?></a></li>
-                                            <li><a href="<?php aboutusPLLink();?>"><?php aboutusPL();?></a></li>
-                                            <li><a href="<?php  conatctPLLink();?>"><?php conatctPL();?></a></li>
+                                        	<li class="text" style="color: #FFFFFF"><a href="<?php homePLLink();?>" style="color: #FFFFFF"><?php homePL();?></a></li>
+                                            <li class="text" style="color: #FFFFFF"><a href="<?php aboutusPLLink();?>" style="color: #FFFFFF"><?php aboutusPL();?></a></li>
+                                            <li  class="text" style="color: #FFFFFF"><a href="<?php  conatctPLLink();?>"style="color: #FFFFFF"><?php conatctPL();?></a></li>
                                             
                                         </ul>
                                     </div>
@@ -53,19 +57,24 @@
                             <!--Footer Column-->
                             <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                                 <div class="footer-widget contact-widget">
-									<h2><?php conatctPL(); ?></h2>
+									<h2 style="color: #E9D689"><?php conatctPL(); ?></h2>
 									<div class="widget-content">
-										<a href="tel:<?php companyMobile2();?>" class="contact-number">
+										<i class="fa fa-phone" aria-hidden="true"
+										style="color: #E9D689"></i>
+										<a href="tel:<?php companyMobile1();?>" class="contact-number" style="color: #FFFFFF">
 											<?php companyMobile1();?>
-										</a>
-
-										<a href="tel:<?php companyMobile2();?>" class="contact-number">
+										</a><br>
+                                          <i class="fa fa-phone" aria-hidden="true" style="color: #E9D689"></i>
+										<a href="tel:<?php companyMobile2();?>" class="contact-number" style="color: #FFFFFF">
 											<?php companyMobile2();?>
 										</a>
-										<h5>Company Address :</h5>
+										<li class="text" style="color: #FFFFFF"> <i class="fa fa-envelope" aria-hidden="true" class="email" style="color: #E9D689"></i> <span><?php companyEmail();?></span></li>
+										<br>
+
+										<h5 style="color: #E9D689">Company Address :</h5>
 										<ul>
-											<li><?php companyAddress();?></li>
-											<li>Email :<a href="<?php companyEmail();?>"> <?php companyEmail();?></a></li>
+											<li class="text" style="color: #FFFFFF"><?php companyAddress();?></li>
+											
 										</ul>
 									</div>
 								</div>
@@ -74,11 +83,11 @@
 							<!--Footer Column-->
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget newsletter-widget">
-                                	<h2>Newsletter</h2>
-									<div class="text">Get Special offers & Discounts</div>
+                                	<h2 style="color: #E9D689">Newsletter</h2>
+									<div class="text" style="color: #FFFFFF">Get Special offers & Discounts</div>
 									<!-- Newsletter Form -->
 									<div class="newsletter-form">
-										<form method="post" action="templateshub.net">
+										<form method="post" action="#">
 											<div class="form-group">
 												<input type="email" name="email" value="" placeholder="Enter your email address" required>
 												<button type="submit" class="theme-btn btn-style-one"><span class="txt">Subscribe</span></button>

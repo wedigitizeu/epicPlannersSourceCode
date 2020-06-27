@@ -10,6 +10,7 @@ session_start();
   .whatsappShare
   {
     display:none !important;
+    color: #50CA5D;
   }
 
   @media screen and (max-width:480px) {
@@ -62,7 +63,7 @@ else{
 
 <div class="page-wrapper">
   <!-- Preloader -->
-  <!-- <div class="preloader"></div> -->
+  <div class="preloader"></div>
 
   <!-- Main Header / Header Style Two -->
   <?php include_once("public/header.php");?>   
@@ -102,7 +103,7 @@ else{
             <ul class="post-info clearfix">
               <li><a href="#">By : <?php  companyTitle(); ?></a></li>
               <li><a href="#"><?php echo $category ?></a></li>
-              <li class="whatsappShare">
+              <li class="whatsappShare" style="">
                 <a href="whatsapp://send?text=" title="Share On Whatsapp" onclick="window.open('whatsapp://send?text=%20Take%20a%20look%20at%20this%20awesome%20page%20-%20' + encodeURIComponent(document.URL)); return false;"> Share with <i class="fa fa-whatsapp" aria-hidden="true"></i>
                  </a>
               </li>
