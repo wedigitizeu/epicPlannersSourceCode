@@ -28,6 +28,7 @@
 
                                     </ul> -->
                                  <?php include_once("public/socialMediaFooter.php");?>
+                                 
 								</div>
 							</div>
 							
