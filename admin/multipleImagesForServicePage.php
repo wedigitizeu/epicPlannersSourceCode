@@ -124,14 +124,15 @@
                 {  
                   if(data==1)
                   {
-
+                    
                   $("#gallery").css('display','block');
                   $("#gallery").fadeOut(6000);
                   $("#war").css('display','block');
                   $("#war").html("<h4>Done..!</h4>");
                   $("#war").fadeOut(6000);
                   $("#result").css('display','none');
-                 
+                  $("#uploadForm")[0].reset()
+
                   }else
                   {
                     $("#result").css('display','block');
