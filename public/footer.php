@@ -16,7 +16,7 @@
 
                                  
 
-                                    	<a href="index-2.html"><img src="images/logo8.png" alt="" /></a>
+                                    	<a href="index.php"><img src="images/logo8.png" alt="" /></a>
                                     	<h3 style="color: #dfb162"><?php companyTitle();?></h3>
 
                                     </div>
