@@ -13,8 +13,12 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
+
+                                 
+
                                     	<a href="index-2.html"><img src="images/logo8.png" alt="" /></a>
-                                    	<h3 style="color: #E9D689"><?php companyTitle();?></h3>
+                                    	<h3 style="color: #dfb162"><?php companyTitle();?></h3>
+
                                     </div>
                                     <div class="text" style="color: #FFFFFF">
                                     	To transform your dreams into an event to be remembered for a lifetime.
@@ -35,7 +39,7 @@
 							<!--Footer Column-->
                             <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
-                                	<h2 style="color: #E9D689">Quick links</h2>
+                                	<h2 style="color: #dfb162">Quick links</h2>
 									<div class="widget-content">
 										<ul class="list">
                                         	<li class="text" style="color: #FFFFFF"><a href="<?php homePLLink();?>" style="color: #FFFFFF"><?php homePL();?></a></li>
@@ -57,21 +61,21 @@
                             <!--Footer Column-->
                             <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                                 <div class="footer-widget contact-widget">
-									<h2 style="color: #E9D689"><?php conatctPL(); ?></h2>
+									<h2 style="color: #dfb162"><?php conatctPL(); ?></h2>
 									<div class="widget-content">
 										<i class="fa fa-phone" aria-hidden="true"
-										style="color: #E9D689"></i>
+										style="color: #dfb162"></i>
 										<a href="tel:<?php companyMobile1();?>" class="contact-number" style="color: #FFFFFF">
 											<?php companyMobile1();?>
 										</a><br>
-                                          <i class="fa fa-phone" aria-hidden="true" style="color: #E9D689"></i>
+                                          <i class="fa fa-phone" aria-hidden="true" style="color: #dfb162"></i>
 										<a href="tel:<?php companyMobile2();?>" class="contact-number" style="color: #FFFFFF">
 											<?php companyMobile2();?>
 										</a>
-										<li class="text" style="color: #FFFFFF"> <i class="fa fa-envelope" aria-hidden="true" class="email" style="color: #E9D689"></i> <span><?php companyEmail();?></span></li>
+										<li class="text" style="color: #FFFFFF"> <i class="fa fa-envelope" aria-hidden="true" class="email" style="color:  #dfb162"></i> <span><?php companyEmail();?></span></li>
 										<br>
 
-										<h5 style="color: #E9D689">Company Address :</h5>
+										<h5 style="color: #dfb162">Company Address :</h5>
 										<ul>
 											<li class="text" style="color: #FFFFFF"><?php companyAddress();?></li>
 											
@@ -83,7 +87,7 @@
 							<!--Footer Column-->
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget newsletter-widget">
-                                	<h2 style="color: #E9D689">Newsletter</h2>
+                                	<h2 style="color: #dfb162">Newsletter</h2>
 									<div class="text" style="color: #FFFFFF">Get Special offers & Discounts</div>
 									<!-- Newsletter Form -->
 									<div class="newsletter-form">
