@@ -19,7 +19,7 @@ function gmail()
 }
 function Insta()
 {
-	echo "https://instagram.com/epic_planneers?igshid=1x3upznpxloq9";
+	echo "https://www.instagram.com/epic_planners_in/";
 	
 }
  function googlePlus(){

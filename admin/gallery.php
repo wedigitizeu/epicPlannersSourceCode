@@ -130,6 +130,7 @@
                   $("#war").html("<h4>Done..!</h4>");
                   $("#war").fadeOut(6000);
                   $("#result").css('display','none');
+                  $("#uploadForm")[0].reset()
                  
                   }else
                   {
