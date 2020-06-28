@@ -231,7 +231,7 @@ else{
 
 
   <!-- Popular Posts -->
-  <div class="sidebar-widget popular-posts">
+  <!-- <div class="sidebar-widget popular-posts">
     <div class="sidebar-title"><h2>Recent News</h2></div>
 
     <article class="post">
@@ -258,7 +258,7 @@ else{
      <div class="post-info">12 April. 2019</div>
    </article>
 
- </div>
+ </div> -->
 
  <!-- Popular Tags -->
 <!-- <div class="sidebar-widget popular-tags">

@@ -1,6 +1,6 @@
 <br><br>
 
-	
+	<form id="form">
 	<div class="row clearfix">
 		<div class="form-group col-lg-6 col-md-6 col-sm-12">
 			<input id="name" type="text" placeholder="Your name">
@@ -32,7 +32,7 @@
 			<center id="warning"></center>
 		</div>
 	</div>
-
+</form>
 
 
 
@@ -43,15 +43,19 @@
 <script>
 	$(document).ready(function()
 	{
-		$("#submit").click(function()
+		$("#submit").click(function(e)
 		{
 
+			e.preventDefault();
 			var name=$("#name").val();
 			var mobile=$("#mobile").val();
 			var looking=$("#lookingFor").val();
 			var location=$("#location").val();
+			var nameReg='^[A-Za-z]{3,50}$';
+			var onlyAlpha='^[A-Za-z]{3,50}$';
+			var mobileRg='^[0-9]{10}$';
 
-			if(name=="")
+			if(name=="" || !name.match(nameReg))
 			{
 
 				warningMsg("Please Enter Valid Name ");
@@ -61,12 +65,15 @@
 			{
 				warningMsg("Please Enter Valid 10 Digit Mobile Number ");
 
+			}else if(mobile.length !=10 || !mobile.match(mobileRg))
+			{
+				warningMsg("Please Enter Valid 10 Digit Mobile Number ");
 			}
-			else if(looking=="")
+			else if(looking=="" || !looking.match(onlyAlpha))
 			{
 				warningMsg("Looking For..? ");
 			}
-			else if(location=="")
+			else if(location=="" || !location.match(onlyAlpha))
 			{
 				warningMsg("Please Enter Valid Location ");
 			}
@@ -82,6 +89,7 @@
 					function(data)
 					{
 						$("#warning").html(data);
+						$("#form")[0].reset()
 					});
 			}
 						
