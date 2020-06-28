@@ -61,7 +61,7 @@ if($totalContacts == 0)
 						<div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
 							<div class="content">
 								<div class="count-outer count-box">
-									<span class="count-text" data-speed="2500" data-stop="8">0</span>+
+									<span class="count-text" data-speed="2500" data-stop="10">0</span>+
 								</div>
 								<h4 class="counter-title">Team Members</h4>
 							</div>
