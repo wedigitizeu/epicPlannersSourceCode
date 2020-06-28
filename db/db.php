@@ -10,13 +10,11 @@
  $uname="root";
  $pwd="";
  $db="epicPlanners";*/
-/*
- $server="localhost";
 
+ $server="localhost";
  $uname="u663901735_epic";
  $pwd="9620606548";
  $db="u663901735_epic";
-*/
 
 $conn=mysqli_connect($server,$uname,$pwd,$db);
 if(!$conn)
