@@ -13,8 +13,12 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-                                    	<a href="index-2.html"><img src="images/logo.jpg" alt="" /></a>
+
+                                 
+
+                                    	<a href="index.php"><img src="images/logo8.png" alt="" /></a>
                                     	<h3 style="color: #dfb162"><?php companyTitle();?></h3>
+
                                     </div>
                                     <div class="text" style="color: #FFFFFF">
                                     	To transform your dreams into an event to be remembered for a lifetime.
