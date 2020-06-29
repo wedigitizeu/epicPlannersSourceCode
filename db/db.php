@@ -6,12 +6,16 @@
  $pwd="";
  $db="epicPlanners";
 */
-
- $server="localhost";
-
+/* We digitize u*/
+/*$server="localhost";
  $uname="u663901735_epic";
  $pwd="9620606548";
- $db="u663901735_epic";
+ $db="u663901735_epic";*/
+ /* Epic Planners*/
+ $server="localhost";
+ $uname="u285343764_epic";
+ $pwd="9620606548";
+ $db="u285343764_epic";
 
 
 $conn=mysqli_connect($server,$uname,$pwd,$db);
@@ -38,11 +42,18 @@ class database{
 */
 
 
-	
-	public $host="localhost";
+	/* We Digitize u*/
+	/*public $host="localhost";
 	public $userName="u663901735_epic";
 	public $password="9620606548";
 	public $databaseName="u663901735_epic";
+	public $con;*/
+
+	/* Epic Planners*/
+	public $host="localhost";
+	public $userName="u285343764_epic";
+	public $password="9620606548";
+	public $databaseName="u285343764_epic";
 	public $con;
 
 
